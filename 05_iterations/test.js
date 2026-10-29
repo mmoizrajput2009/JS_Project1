@@ -293,26 +293,63 @@
 // console.log(twoSum(nums, target));
 
 
-function twoSums(nums, target) {
-    let map = new Map();
+// function twoSums(nums, target) {
+//     let map = new Map();
 
-    for (let i = 0; i < nums.length; i++) {
-        let currentNum = nums[i];
+//     for (let i = 0; i < nums.length; i++) {
+//         let currentNum = nums[i];
 
 
-        let neededNum = target - currentNum;
+//         let neededNum = target - currentNum;
 
-        if (map.has(neededNum)) {
-            return [map.get(neededNum), i];
-        }
+//         if (map.has(neededNum)) {
+//             return [map.get(neededNum), i];
+//         }
 
-        map.set(currentNum, i);
-    }
+//         map.set(currentNum, i);
+//     }
 
-    return [];
-}
+//     return [];
+// }
 
-let nums = [3, 5, 9, 6, 12];
-let target = 15;
+// let nums = [3, 5, 9, 6, 12];
+// let target = 15;
 
-console.log(twoSums(nums, target));
+// console.log(twoSums(nums, target));
+
+
+// let fruits = ["Mango", 'Apple', "Banana", "Orange", "Pineapple"];
+
+// for (let i = 0; i < fruits.length; i++) {
+
+//     console.log(fruits[i]);
+
+// }
+
+// let fruits = ["Mango", 'Apple', "Banana", "Orange", "Pineapple"];
+// for (const fruit of fruits) {
+//     console.log(fruit);
+
+// }
+
+// let fruits = ["Mango", 'Apple', "Banana", "Orange", "Pineapple"];
+// fruits.forEach(fruit => {
+//     console.log(fruit);
+
+// });
+
+// let fruits = [15, 25, 36, 47, 55];
+
+// fruits.forEach(fruit => {
+//     console.log(fruit + 10);
+
+// });
+
+
+let numbers = [2, 4, 6, 8, 10];
+
+let result = numbers.map(function (num) {
+    return num * 3
+});
+
+console.log(result);
