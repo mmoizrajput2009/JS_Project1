@@ -269,16 +269,41 @@
 // console.log(generateFibonacci(9));
 
 
-function twoSum(nums, target) {
+// function twoSum(nums, target) {
+//     let map = new Map();
+
+//     for (let i = 0; i < nums.length; i++) {
+//         let currentNum = nums[i];
+
+//         let neededNums = target - currentNum;
+
+//         if (map.has(neededNums)) {
+//             return [map.get(neededNums), i]
+//         }
+
+//         map.set(currentNum, i);
+//     }
+
+//     return [];
+// }
+
+// let nums = [2, 7, 11, 15];
+// let target = 9;
+
+// console.log(twoSum(nums, target));
+
+
+function twoSums(nums, target) {
     let map = new Map();
 
     for (let i = 0; i < nums.length; i++) {
         let currentNum = nums[i];
 
-        let neededNums = target - currentNum;
 
-        if (map.has(neededNums)) {
-            return [map.get(neededNums), i]
+        let neededNum = target - currentNum;
+
+        if (map.has(neededNum)) {
+            return [map.get(neededNum), i];
         }
 
         map.set(currentNum, i);
@@ -287,7 +312,7 @@ function twoSum(nums, target) {
     return [];
 }
 
-let nums = [2, 7, 11, 15];
-let target = 9;
+let nums = [3, 5, 9, 6, 12];
+let target = 15;
 
-console.log(twoSum(nums, target));
+console.log(twoSums(nums, target));
