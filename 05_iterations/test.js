@@ -381,3 +381,28 @@ function nums(val) {
 console.log(nums(6));
 console.log(nums(-8));
 console.log(nums(0));
+
+function checkVotingAge(age) {
+    if (age >= 18) {
+        return `You can vote`
+    } else {
+        return `You are not eligible for vote`
+    }
+}
+
+console.log(checkVotingAge(18));
+console.log(checkVotingAge(16));
+
+function calculateGrades(marks) {
+    if (marks >= 80) {
+        return "Grade A - Acha marks han!";
+    } else if (marks >= 50) {
+        return "Grade B - Marks theek han!";
+    } else {
+        return "Fail - Marks bht kaam han!";
+    }
+};
+
+console.log(calculateGrades(85));
+console.log(calculateGrades(65));
+console.log(calculateGrades(22));
