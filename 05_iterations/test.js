@@ -355,54 +355,78 @@
 // console.log(result);
 
 
-function findGreater(a, b) {
+// function findGreater(a, b) {
 
-    if (a > b) {
-        return a
+//     if (a > b) {
+//         return a
 
+//     } else {
+//         return b
+
+//     }
+// };
+
+// console.log(findGreater(15, 40));
+
+// function nums(val) {
+//     if (val > 0) {
+//         return `Positive ha`
+//     } else if (val < 0) {
+//         return `Negative ha`
+//     } else {
+//         return `Zero ha`
+//     }
+// }
+
+// console.log(nums(6));
+// console.log(nums(-8));
+// console.log(nums(0));
+
+// function checkVotingAge(age) {
+//     if (age >= 18) {
+//         return `You can vote`
+//     } else {
+//         return `You are not eligible for vote`
+//     }
+// }
+
+// console.log(checkVotingAge(18));
+// console.log(checkVotingAge(16));
+
+// function calculateGrades(marks) {
+//     if (marks >= 80) {
+//         return "Grade A - Acha marks han!";
+//     } else if (marks >= 50) {
+//         return "Grade B - Marks theek han!";
+//     } else {
+//         return "Fail - Marks bht kaam han!";
+//     }
+// };
+
+// console.log(calculateGrades(85));
+// console.log(calculateGrades(65));
+// console.log(calculateGrades(22));
+
+function getTicketPrices(age, isStudent) {
+    if (age <= 12) {
+        return "RS 300 (Child Discount)"
+    } else if (isStudent === true) {
+        return "RS 400 (Student Discount)"
     } else {
-        return b
-
+        return "RS 1000 (Standard Ticket)"
     }
 };
 
-console.log(findGreater(15, 40));
+console.log(getTicketPrices(10, false));
+console.log(getTicketPrices(22, true));
+console.log(getTicketPrices(25, false));
 
-function nums(val) {
-    if (val > 0) {
-        return `Positive ha`
-    } else if (val < 0) {
-        return `Negative ha`
+for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0) {
+        console.log("Yeh number 3 par divide hota hai: " + i);
+
     } else {
-        return `Zero ha`
+        console.log("Yeh 3 par divide nahi hota: " + i);
+
     }
 }
-
-console.log(nums(6));
-console.log(nums(-8));
-console.log(nums(0));
-
-function checkVotingAge(age) {
-    if (age >= 18) {
-        return `You can vote`
-    } else {
-        return `You are not eligible for vote`
-    }
-}
-
-console.log(checkVotingAge(18));
-console.log(checkVotingAge(16));
-
-function calculateGrades(marks) {
-    if (marks >= 80) {
-        return "Grade A - Acha marks han!";
-    } else if (marks >= 50) {
-        return "Grade B - Marks theek han!";
-    } else {
-        return "Fail - Marks bht kaam han!";
-    }
-};
-
-console.log(calculateGrades(85));
-console.log(calculateGrades(65));
-console.log(calculateGrades(22));
