@@ -332,18 +332,18 @@
 
 // }
 
-// let fruits = ["Mango", 'Apple', "Banana", "Orange", "Pineapple"];
-// fruits.forEach(fruit => {
-//     console.log(fruit);
+let fruits = ["Mango", 'Apple', "Banana", "Orange", "Pineapple"];
+fruits.forEach(fruit => {
+    console.log(fruit);
 
-// });
+});
 
-// let fruits = [15, 25, 36, 47, 55];
+let nums = [15, 25, 36, 47, 55];
 
-// fruits.forEach(fruit => {
-//     console.log(fruit + 10);
+nums.forEach(nums => {
+    console.log(nums + 10);
 
-// });
+});
 
 
 let numbers = [2, 4, 6, 8, 10];
