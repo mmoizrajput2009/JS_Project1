@@ -332,24 +332,52 @@
 
 // }
 
-let fruits = ["Mango", 'Apple', "Banana", "Orange", "Pineapple"];
-fruits.forEach(fruit => {
-    console.log(fruit);
+// let fruits = ["Mango", 'Apple', "Banana", "Orange", "Pineapple"];
+// fruits.forEach(fruit => {
+//     console.log(fruit);
 
-});
+// });
 
-let nums = [15, 25, 36, 47, 55];
+// let nums = [15, 25, 36, 47, 55];
 
-nums.forEach(nums => {
-    console.log(nums + 10);
+// nums.forEach(nums => {
+//     console.log(nums + 10);
 
-});
+// });
 
 
-let numbers = [2, 4, 6, 8, 10];
+// let numbers = [2, 4, 6, 8, 10];
 
-let result = numbers.map(function (num) {
-    return num * 3
-});
+// let result = numbers.map(function (num) {
+//     return num * 3
+// });
 
-console.log(result);
+// console.log(result);
+
+
+function findGreater(a, b) {
+
+    if (a > b) {
+        return a
+
+    } else {
+        return b
+
+    }
+};
+
+console.log(findGreater(15, 40));
+
+function nums(val) {
+    if (val > 0) {
+        return `Positive ha`
+    } else if (val < 0) {
+        return `Negative ha`
+    } else {
+        return `Zero ha`
+    }
+}
+
+console.log(nums(6));
+console.log(nums(-8));
+console.log(nums(0));
