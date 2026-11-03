@@ -393,84 +393,97 @@
 // console.log(checkVotingAge(18));
 // console.log(checkVotingAge(16));
 
-function calculateGrades(marks) {
-    if (marks >= 80) {
-        return "Grade A - Acha marks han!";
-    } else if (marks >= 50) {
-        return "Grade B - Marks theek han!";
-    } else {
-        return "Fail - Marks bht kaam han!";
-    }
-};
+// function calculateGrades(marks) {
+//     if (marks >= 80) {
+//         return "Grade A - Acha marks han!";
+//     } else if (marks >= 50) {
+//         return "Grade B - Marks theek han!";
+//     } else {
+//         return "Fail - Marks bht kaam han!";
+//     }
+// };
 
-console.log(calculateGrades(85));
-console.log(calculateGrades(65));
-console.log(calculateGrades(22));
+// console.log(calculateGrades(85));
+// console.log(calculateGrades(65));
+// console.log(calculateGrades(22));
 
-function getTicketPrices(age, isStudent) {
-    if (age <= 12) {
-        return "RS 300 (Child Discount)"
-    } else if (isStudent === true) {
-        return "RS 400 (Student Discount)"
-    } else {
-        return "RS 1000 (Standard Ticket)"
-    }
-};
+// function getTicketPrices(age, isStudent) {
+//     if (age <= 12) {
+//         return "RS 300 (Child Discount)"
+//     } else if (isStudent === true) {
+//         return "RS 400 (Student Discount)"
+//     } else {
+//         return "RS 1000 (Standard Ticket)"
+//     }
+// };
 
-console.log(getTicketPrices(10, false));
-console.log(getTicketPrices(22, true));
-console.log(getTicketPrices(25, false));
+// console.log(getTicketPrices(10, false));
+// console.log(getTicketPrices(22, true));
+// console.log(getTicketPrices(25, false));
 
-for (let i = 1; i <= 20; i++) {
-    if (i % 3 === 0) {
-        console.log("Yeh number 3 par divide hota hai: " + i);
+// for (let i = 1; i <= 20; i++) {
+//     if (i % 3 === 0) {
+//         console.log("Yeh number 3 par divide hota hai: " + i);
 
-    } else {
-        console.log("Yeh 3 par divide nahi hota: " + i);
+//     } else {
+//         console.log("Yeh 3 par divide nahi hota: " + i);
 
-    }
-}
-
-function checkEvenOddUpTo(limit) {
-    for (let i = 1; i <= limit; i++) {
-        if (i % 2 === 0) {
-            console.log("Even number hai : " + i);
-
-        } else {
-            console.log("Odd number hai : " + i);
-        }
-    }
-}
-
-checkEvenOddUpTo(10)
-
-
-let carBrands = ["Toyota", "Honda", "Mercedes", "Ferrari", "Porsche", "lamborghini"];
-
-for (let i = 0; i < carBrands.length; i++) {
-    console.log("Mera pasandeeda car brands ya wla han : " + carBrands[i]);
-};
-
-// let numbers = [5, 12, 32, 14, 57, 3, 67, 10, 25, 2, 7, 9, 1];
-
-// for (let i = 0; i < numbers.length; i++) {
-//     if (numbers[i] > 10) {
-//         console.log("Ya numbers bara ha 10 sa : " + numbers[i]);
 //     }
 // }
 
-let numbers = [4, 5, 6, 54, 23, 15, 76, 67, 35, 58, 98, 62, 11, 7,99]
-let evenCount = 0
-let oddCount = 0
+// function checkEvenOddUpTo(limit) {
+//     for (let i = 1; i <= limit; i++) {
+//         if (i % 2 === 0) {
+//             console.log("Even number hai : " + i);
+
+//         } else {
+//             console.log("Odd number hai : " + i);
+//         }
+//     }
+// }
+
+// checkEvenOddUpTo(10)
+
+
+// let carBrands = ["Toyota", "Honda", "Mercedes", "Ferrari", "Porsche", "lamborghini"];
+
+// for (let i = 0; i < carBrands.length; i++) {
+//     console.log("Mera pasandeeda car brands ya wla han : " + carBrands[i]);
+// };
+
+// // let numbers = [5, 12, 32, 14, 57, 3, 67, 10, 25, 2, 7, 9, 1];
+
+// // for (let i = 0; i < numbers.length; i++) {
+// //     if (numbers[i] > 10) {
+// //         console.log("Ya numbers bara ha 10 sa : " + numbers[i]);
+// //     }
+// // }
+
+// let numbers = [4, 5, 6, 54, 23, 15, 76, 67, 35, 58, 98, 62, 11, 7, 99]
+// let evenCount = 0
+// let oddCount = 0
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 === 0) {
+//         evenCount++;
+//     }
+//     if (numbers[i] % 2 !== 0) {
+//         oddCount++;
+//     }
+// }
+
+// console.log("Total Odd numbers han : " + oddCount);
+// console.log("Total Even numbers han : " + evenCount);
+
+let numbers = [1, 3, 7, 5, 4, 12];
+let target = 12;
 
 for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-        evenCount++;
-    }
-    if (numbers[i] % 2 !== 0) {
-        oddCount++;
+    for (let j = 0; j < numbers.length; j++) {
+        for (let k = 0; k < numbers.length; k++) {
+            if (numbers[i] + numbers[j] + numbers[k] === target) {
+                console.log(i, j, k);
+            }
+        }
     }
 }
-
-console.log("Total Odd numbers han : " + oddCount);
-console.log("Total Even numbers han : " + evenCount);
