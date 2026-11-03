@@ -1,479 +1,479 @@
-// const users = [
-//     { id: 1, name: "Moiz" },
-//     { id: 2, name: "Ali" },
-//     { id: 3, name: "Ahmed" }
-// ];
+const users = [
+    { id: 1, name: "Moiz" },
+    { id: 2, name: "Ali" },
+    { id: 3, name: "Ahmed" }
+];
 
-// const userDetails = [
-//     { id: 1, city: "Rawalpindi", age: 17 },
-//     { id: 2, city: "Lahore", age: 19 },
-//     { id: 3, city: "Karachi", age: 20 }
-// ];
+const userDetails = [
+    { id: 1, city: "Rawalpindi", age: 17 },
+    { id: 2, city: "Lahore", age: 19 },
+    { id: 3, city: "Karachi", age: 20 }
+];
 
-// const finalUsers = userDetails.map((userDetail) => {
-//     const user = users.find((user) => user.id === userDetail.id);
+const finalUsers = userDetails.map((userDetail) => {
+    const user = users.find((user) => user.id === userDetail.id);
 
-//     return {
-//         ...userDetail,
-//         name: user.name
-//     };
-// });
+    return {
+        ...userDetail,
+        name: user.name
+    };
+});
 
-// console.log(finalUsers);
-
-
-// const numbers = [
-//     45, 12, 89, 34, 67,
-//     23, 90, 56, 11, 78,
-//     42, 19, 63, 85, 30,
-//     7, 51, 96, 28, 74
-// ];
-
-// const maxNumber = Math.max(...numbers);
-// const minNumber = Math.min(...numbers);
-
-// console.log("Maximum Number:", maxNumber);
-// console.log("Minimum Number:", minNumber);
+console.log(finalUsers);
 
 
-// const numbers = [
-//     34, 76, 12, 95, 43,
-//     68, 21, 87, 50, 16,
-//     72, 39, 84, 5, 61
-// ];
+const numbers = [
+    45, 12, 89, 34, 67,
+    23, 90, 56, 11, 78,
+    42, 19, 63, 85, 30,
+    7, 51, 96, 28, 74
+];
 
-// const evenNumbers = numbers.filter((num) => {
-//     return num % 2 !== 0;
-// });
+const maxNumber = Math.max(...numbers);
+const minNumber = Math.min(...numbers);
 
-// console.log("Even Numbers:", evenNumbers);
+console.log("Maximum Number:", maxNumber);
+console.log("Minimum Number:", minNumber);
 
-// const numbers = [
-//     34, 76, 12, 95, 43,
-//     68, 21, 87, 50, 16,
-//     72, 39, 84, 5, 61
-// ];
 
-// // const result = numbers.filter((num) => {
-// //     return num > 20 && num < 80;
-// // });
+const numbers = [
+    34, 76, 12, 95, 43,
+    68, 21, 87, 50, 16,
+    72, 39, 84, 5, 61
+];
 
-// // console.log(result);
+const evenNumbers = numbers.filter((num) => {
+    return num % 2 !== 0;
+});
+
+console.log("Even Numbers:", evenNumbers);
+
+const numbers = [
+    34, 76, 12, 95, 43,
+    68, 21, 87, 50, 16,
+    72, 39, 84, 5, 61
+];
 
 // const result = numbers.filter((num) => {
-//     return num < 20 || num > 80;
+//     return num > 20 && num < 80;
 // });
 
 // console.log(result);
 
+const result = numbers.filter((num) => {
+    return num < 20 || num > 80;
+});
 
-// const numbers = [
-//     34, 76, 12, 95, 43,
-//     68, 21, 87, 50, 16,
-//     72, 39, 84, 5, 61
-// ];
-
-// const result = numbers.filter((num) => {
-//     return (num > 20 && num < 80) || num > 90;
-// });
-
-// console.log(result);
-
-// const numbers = [
-//     15, 42, 78, 9, 65,
-//     91, 34, 56, 23, 88,
-//     12, 73, 47, 96, 30
-// ];
+console.log(result);
+
+
+const numbers = [
+    34, 76, 12, 95, 43,
+    68, 21, 87, 50, 16,
+    72, 39, 84, 5, 61
+];
 
-// const result = numbers.filter((num) => {
-//     return (num > 20 && num < 60) || num > 90;
-// });
+const result = numbers.filter((num) => {
+    return (num > 20 && num < 80) || num > 90;
+});
+
+console.log(result);
+
+const numbers = [
+    15, 42, 78, 9, 65,
+    91, 34, 56, 23, 88,
+    12, 73, 47, 96, 30
+];
 
-// console.log(result);
+const result = numbers.filter((num) => {
+    return (num > 20 && num < 60) || num > 90;
+});
 
+console.log(result);
 
-// const numbers = [
-//     14, 27, 36, 49, 52,
-//     63, 78, 81, 95, 20,
-//     33, 46, 57, 62, 89
-// ];
 
-// const result = numbers.filter((num) => {
-//     return num % 2 === 0;
-// });
+const numbers = [
+    14, 27, 36, 49, 52,
+    63, 78, 81, 95, 20,
+    33, 46, 57, 62, 89
+];
 
-// console.log(result);
+const result = numbers.filter((num) => {
+    return num % 2 === 0;
+});
 
-// const result2 = numbers.filter((num) => {
-//        return num % 2 !== 0;
-// }); 
+console.log(result);
 
-// console.log(result2);
+const result2 = numbers.filter((num) => {
+       return num % 2 !== 0;
+}); 
 
+console.log(result2);
 
-// const numbers = [
-//     14, 27, 36, 49, 52,
-//     63, 78, 81, 95, 20,
-//     33, 46, 57, 62, 89
-// ];
 
-// const result = numbers.filter((num) => {
-//     return num > 50;
-// });
+const numbers = [
+    14, 27, 36, 49, 52,
+    63, 78, 81, 95, 20,
+    33, 46, 57, 62, 89
+];
 
-// console.log(result);
+const result = numbers.filter((num) => {
+    return num > 50;
+});
 
+console.log(result);
 
-// const users = [
-//     { id: 1, name: "Moiz", city: "Rawalpindi" },
-//     { id: 2, name: "Ali", city: "Lahore" },
-//     { id: 3, name: "Zain", city: "Karachi" },
-//     { id: 4, name: "Bilal", city: "Islamabad" }
-// ];
 
-// const userDetails = [
-//     { id: 1, age: 17 },
-//     { id: 2, age: 19 },
-//     { id: 3, age: 18 },
-//     { id: 4, age: 21 }
-// ];
+const users = [
+    { id: 1, name: "Moiz", city: "Rawalpindi" },
+    { id: 2, name: "Ali", city: "Lahore" },
+    { id: 3, name: "Zain", city: "Karachi" },
+    { id: 4, name: "Bilal", city: "Islamabad" }
+];
 
-// const finalUsers = users.map((user) => {
-//     const details = userDetails.find((userDetail) => {
-//         return user.id === userDetail.id;
-//     });
+const userDetails = [
+    { id: 1, age: 17 },
+    { id: 2, age: 19 },
+    { id: 3, age: 18 },
+    { id: 4, age: 21 }
+];
 
-//     return {
-//         ...user,
-//         age: details.age
-//     };
-// });
+const finalUsers = users.map((user) => {
+    const details = userDetails.find((userDetail) => {
+        return user.id === userDetail.id;
+    });
 
-// console.log(finalUsers);
+    return {
+        ...user,
+        age: details.age
+    };
+});
 
-// const students = [
-//     { id: 101, name: "Moiz", course: "Javascript" },
-//     { id: 102, name: "Ali", course: "HTML" },
-//     { id: 103, name: "Bilal", course: "CSS" },
-//     { id: 104, name: "Shery", course: "React" },
-//     { id: 105, name: "Zain", course: "Node.js" }
-// ];
+console.log(finalUsers);
 
-// const studentDetails = [
-//     { id: 103, age: 18, city: "Karachi" },
-//     { id: 101, age: 17, city: "Rawalpindi" },
-//     { id: 105, age: 22, city: "Islamabad" },
-//     { id: 102, age: 19, city: "Lahore" },
-//     { id: 104, age: 20, city: "Peshawar" }
-// ];
+const students = [
+    { id: 101, name: "Moiz", course: "Javascript" },
+    { id: 102, name: "Ali", course: "HTML" },
+    { id: 103, name: "Bilal", course: "CSS" },
+    { id: 104, name: "Shery", course: "React" },
+    { id: 105, name: "Zain", course: "Node.js" }
+];
 
-// const finalResult = students.map((student) => {
-//     const studentDetail = studentDetails.find((detail) => {
-//         return student.id === detail.id;
-//     });
+const studentDetails = [
+    { id: 103, age: 18, city: "Karachi" },
+    { id: 101, age: 17, city: "Rawalpindi" },
+    { id: 105, age: 22, city: "Islamabad" },
+    { id: 102, age: 19, city: "Lahore" },
+    { id: 104, age: 20, city: "Peshawar" }
+];
 
-//     return {
-//         ...student,
-//         ...studentDetail
-//     };
+const finalResult = students.map((student) => {
+    const studentDetail = studentDetails.find((detail) => {
+        return student.id === detail.id;
+    });
 
-// });
+    return {
+        ...student,
+        ...studentDetail
+    };
 
-// console.log(finalResult);
+});
 
+console.log(finalResult);
 
-// const prices = [123, 320, 445, 600, 678, 43, 214, 651];
 
-// const minValue = Math.min(...prices);
-// const maxValue = Math.max(...prices);
+const prices = [123, 320, 445, 600, 678, 43, 214, 651];
 
-// console.log("Min Value:", minValue);
-// console.log("Max Value:", maxValue);
+const minValue = Math.min(...prices);
+const maxValue = Math.max(...prices);
 
+console.log("Min Value:", minValue);
+console.log("Max Value:", maxValue);
 
-// const prices = [250, 1200, 75, 890, 450, 1600, 320];
 
-// let smallest = prices[0];
-// let longest = prices[0];
+const prices = [250, 1200, 75, 890, 450, 1600, 320];
 
-// for (let i = 1; i < prices.length; i++) {
-//     if (prices[i] < smallest) {
-//         smallest = prices[i];
-//     }
+let smallest = prices[0];
+let longest = prices[0];
 
-//     if (prices[i] > longest) {
-//         longest = prices[i];
-//     }
-// };
+for (let i = 1; i < prices.length; i++) {
+    if (prices[i] < smallest) {
+        smallest = prices[i];
+    }
 
-// console.log(smallest);
-// console.log(longest);
+    if (prices[i] > longest) {
+        longest = prices[i];
+    }
+};
 
-// const prices = [250, 1200, 75, 890, 450, 1600, 320];
+console.log(smallest);
+console.log(longest);
 
-// let min = prices[0];
-// let max = prices[0];
+const prices = [250, 1200, 75, 890, 450, 1600, 320];
 
-// for (const price of prices) {
-//     if (price < min) {
-//        min = price
-//     }
+let min = prices[0];
+let max = prices[0];
 
-//      if (price > max) {
-//        max = price
-//     }
-// };
+for (const price of prices) {
+    if (price < min) {
+       min = price
+    }
 
-// console.log(min);
-// console.log(max);
+     if (price > max) {
+       max = price
+    }
+};
 
+console.log(min);
+console.log(max);
 
-// const prices = [250, 1200, 75, 890, 450, 1600, 320];
 
-// prices.sort((a, b) => a - b);
+const prices = [250, 1200, 75, 890, 450, 1600, 320];
 
-// console.log(prices);
+prices.sort((a, b) => a - b);
 
+console.log(prices);
 
-// let scores = [45, 12, 89, 23, 67];
 
-// for (let i = 0; i < scores.length; i++) {
+let scores = [45, 12, 89, 23, 67];
 
+for (let i = 0; i < scores.length; i++) {
 
-//     for (let j = 0; j < scores.length - 1; j++) {
-//         if (scores[j] > scores[j + 1]) {
-//             let num = scores[j]
-//             scores[j] = scores[j + 1]
-//             scores[j + 1] = num
-//         };
-//     };
-// };
 
-// console.log(scores);
+    for (let j = 0; j < scores.length - 1; j++) {
+        if (scores[j] > scores[j + 1]) {
+            let num = scores[j]
+            scores[j] = scores[j + 1]
+            scores[j + 1] = num
+        };
+    };
+};
 
+console.log(scores);
 
 
-// function generateFibonacci(n) {
-//     if (n <= 0) return [];
-//     if (n === 1) return [0];
 
-//     let fib = [0, 1];
+function generateFibonacci(n) {
+    if (n <= 0) return [];
+    if (n === 1) return [0];
 
-//     for (let i = 2; i < n; i++) {
-//         let nextNum = fib[i - 1] + fib[i - 2];
-//         fib.push(nextNum);
-//     }
-//     return fib;
-// }
+    let fib = [0, 1];
 
-// console.log(generateFibonacci(9));
+    for (let i = 2; i < n; i++) {
+        let nextNum = fib[i - 1] + fib[i - 2];
+        fib.push(nextNum);
+    }
+    return fib;
+}
 
+console.log(generateFibonacci(9));
 
-// function twoSum(nums, target) {
-//     let map = new Map();
 
-//     for (let i = 0; i < nums.length; i++) {
-//         let currentNum = nums[i];
+function twoSum(nums, target) {
+    let map = new Map();
 
-//         let neededNums = target - currentNum;
+    for (let i = 0; i < nums.length; i++) {
+        let currentNum = nums[i];
 
-//         if (map.has(neededNums)) {
-//             return [map.get(neededNums), i]
-//         }
+        let neededNums = target - currentNum;
 
-//         map.set(currentNum, i);
-//     }
+        if (map.has(neededNums)) {
+            return [map.get(neededNums), i]
+        }
 
-//     return [];
-// }
+        map.set(currentNum, i);
+    }
 
-// let nums = [2, 7, 11, 15];
-// let target = 9;
+    return [];
+}
 
-// console.log(twoSum(nums, target));
+let nums = [2, 7, 11, 15];
+let target = 9;
 
+console.log(twoSum(nums, target));
 
-// function twoSums(nums, target) {
-//     let map = new Map();
 
-//     for (let i = 0; i < nums.length; i++) {
-//         let currentNum = nums[i];
+function twoSums(nums, target) {
+    let map = new Map();
 
+    for (let i = 0; i < nums.length; i++) {
+        let currentNum = nums[i];
 
-//         let neededNum = target - currentNum;
 
-//         if (map.has(neededNum)) {
-//             return [map.get(neededNum), i];
-//         }
+        let neededNum = target - currentNum;
 
-//         map.set(currentNum, i);
-//     }
+        if (map.has(neededNum)) {
+            return [map.get(neededNum), i];
+        }
 
-//     return [];
-// }
+        map.set(currentNum, i);
+    }
 
-// let nums = [3, 5, 9, 6, 12];
-// let target = 15;
+    return [];
+}
 
-// console.log(twoSums(nums, target));
+let nums = [3, 5, 9, 6, 12];
+let target = 15;
 
+console.log(twoSums(nums, target));
 
-// let fruits = ["Mango", 'Apple', "Banana", "Orange", "Pineapple"];
 
-// for (let i = 0; i < fruits.length; i++) {
+let fruits = ["Mango", 'Apple', "Banana", "Orange", "Pineapple"];
 
-//     console.log(fruits[i]);
+for (let i = 0; i < fruits.length; i++) {
 
-// }
+    console.log(fruits[i]);
 
-// let fruits = ["Mango", 'Apple', "Banana", "Orange", "Pineapple"];
-// for (const fruit of fruits) {
-//     console.log(fruit);
+}
 
-// }
+let fruits = ["Mango", 'Apple', "Banana", "Orange", "Pineapple"];
+for (const fruit of fruits) {
+    console.log(fruit);
 
-// let fruits = ["Mango", 'Apple', "Banana", "Orange", "Pineapple"];
-// fruits.forEach(fruit => {
-//     console.log(fruit);
+}
 
-// });
+let fruits = ["Mango", 'Apple', "Banana", "Orange", "Pineapple"];
+fruits.forEach(fruit => {
+    console.log(fruit);
 
-// let nums = [15, 25, 36, 47, 55];
+});
 
-// nums.forEach(nums => {
-//     console.log(nums + 10);
+let nums = [15, 25, 36, 47, 55];
 
-// });
+nums.forEach(nums => {
+    console.log(nums + 10);
 
+});
 
-// let numbers = [2, 4, 6, 8, 10];
 
-// let result = numbers.map(function (num) {
-//     return num * 3
-// });
+let numbers = [2, 4, 6, 8, 10];
 
-// console.log(result);
+let result = numbers.map(function (num) {
+    return num * 3
+});
 
+console.log(result);
 
-// function findGreater(a, b) {
 
-//     if (a > b) {
-//         return a
+function findGreater(a, b) {
 
-//     } else {
-//         return b
+    if (a > b) {
+        return a
 
-//     }
-// };
+    } else {
+        return b
 
-// console.log(findGreater(15, 40));
+    }
+};
 
-// function nums(val) {
-//     if (val > 0) {
-//         return `Positive ha`
-//     } else if (val < 0) {
-//         return `Negative ha`
-//     } else {
-//         return `Zero ha`
-//     }
-// }
+console.log(findGreater(15, 40));
 
-// console.log(nums(6));
-// console.log(nums(-8));
-// console.log(nums(0));
+function nums(val) {
+    if (val > 0) {
+        return `Positive ha`
+    } else if (val < 0) {
+        return `Negative ha`
+    } else {
+        return `Zero ha`
+    }
+}
 
-// function checkVotingAge(age) {
-//     if (age >= 18) {
-//         return `You can vote`
-//     } else {
-//         return `You are not eligible for vote`
-//     }
-// }
+console.log(nums(6));
+console.log(nums(-8));
+console.log(nums(0));
 
-// console.log(checkVotingAge(18));
-// console.log(checkVotingAge(16));
+function checkVotingAge(age) {
+    if (age >= 18) {
+        return `You can vote`
+    } else {
+        return `You are not eligible for vote`
+    }
+}
 
-// function calculateGrades(marks) {
-//     if (marks >= 80) {
-//         return "Grade A - Acha marks han!";
-//     } else if (marks >= 50) {
-//         return "Grade B - Marks theek han!";
-//     } else {
-//         return "Fail - Marks bht kaam han!";
-//     }
-// };
+console.log(checkVotingAge(18));
+console.log(checkVotingAge(16));
 
-// console.log(calculateGrades(85));
-// console.log(calculateGrades(65));
-// console.log(calculateGrades(22));
+function calculateGrades(marks) {
+    if (marks >= 80) {
+        return "Grade A - Acha marks han!";
+    } else if (marks >= 50) {
+        return "Grade B - Marks theek han!";
+    } else {
+        return "Fail - Marks bht kaam han!";
+    }
+};
 
-// function getTicketPrices(age, isStudent) {
-//     if (age <= 12) {
-//         return "RS 300 (Child Discount)"
-//     } else if (isStudent === true) {
-//         return "RS 400 (Student Discount)"
-//     } else {
-//         return "RS 1000 (Standard Ticket)"
-//     }
-// };
+console.log(calculateGrades(85));
+console.log(calculateGrades(65));
+console.log(calculateGrades(22));
 
-// console.log(getTicketPrices(10, false));
-// console.log(getTicketPrices(22, true));
-// console.log(getTicketPrices(25, false));
+function getTicketPrices(age, isStudent) {
+    if (age <= 12) {
+        return "RS 300 (Child Discount)"
+    } else if (isStudent === true) {
+        return "RS 400 (Student Discount)"
+    } else {
+        return "RS 1000 (Standard Ticket)"
+    }
+};
 
-// for (let i = 1; i <= 20; i++) {
-//     if (i % 3 === 0) {
-//         console.log("Yeh number 3 par divide hota hai: " + i);
+console.log(getTicketPrices(10, false));
+console.log(getTicketPrices(22, true));
+console.log(getTicketPrices(25, false));
 
-//     } else {
-//         console.log("Yeh 3 par divide nahi hota: " + i);
+for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0) {
+        console.log("Yeh number 3 par divide hota hai: " + i);
 
-//     }
-// }
+    } else {
+        console.log("Yeh 3 par divide nahi hota: " + i);
 
-// function checkEvenOddUpTo(limit) {
-//     for (let i = 1; i <= limit; i++) {
-//         if (i % 2 === 0) {
-//             console.log("Even number hai : " + i);
+    }
+}
 
-//         } else {
-//             console.log("Odd number hai : " + i);
-//         }
-//     }
-// }
+function checkEvenOddUpTo(limit) {
+    for (let i = 1; i <= limit; i++) {
+        if (i % 2 === 0) {
+            console.log("Even number hai : " + i);
 
-// checkEvenOddUpTo(10)
+        } else {
+            console.log("Odd number hai : " + i);
+        }
+    }
+}
 
+checkEvenOddUpTo(10)
 
-// let carBrands = ["Toyota", "Honda", "Mercedes", "Ferrari", "Porsche", "lamborghini"];
 
-// for (let i = 0; i < carBrands.length; i++) {
-//     console.log("Mera pasandeeda car brands ya wla han : " + carBrands[i]);
-// };
+let carBrands = ["Toyota", "Honda", "Mercedes", "Ferrari", "Porsche", "lamborghini"];
 
-// // let numbers = [5, 12, 32, 14, 57, 3, 67, 10, 25, 2, 7, 9, 1];
+for (let i = 0; i < carBrands.length; i++) {
+    console.log("Mera pasandeeda car brands ya wla han : " + carBrands[i]);
+};
 
-// // for (let i = 0; i < numbers.length; i++) {
-// //     if (numbers[i] > 10) {
-// //         console.log("Ya numbers bara ha 10 sa : " + numbers[i]);
-// //     }
-// // }
+let numbers = [5, 12, 32, 14, 57, 3, 67, 10, 25, 2, 7, 9, 1];
 
-// let numbers = [4, 5, 6, 54, 23, 15, 76, 67, 35, 58, 98, 62, 11, 7, 99]
-// let evenCount = 0
-// let oddCount = 0
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 10) {
+        console.log("Ya numbers bara ha 10 sa : " + numbers[i]);
+    }
+}
 
-// for (let i = 0; i < numbers.length; i++) {
-//     if (numbers[i] % 2 === 0) {
-//         evenCount++;
-//     }
-//     if (numbers[i] % 2 !== 0) {
-//         oddCount++;
-//     }
-// }
+let numbers = [4, 5, 6, 54, 23, 15, 76, 67, 35, 58, 98, 62, 11, 7, 99]
+let evenCount = 0
+let oddCount = 0
 
-// console.log("Total Odd numbers han : " + oddCount);
-// console.log("Total Even numbers han : " + evenCount);
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+        evenCount++;
+    }
+    if (numbers[i] % 2 !== 0) {
+        oddCount++;
+    }
+}
+
+console.log("Total Odd numbers han : " + oddCount);
+console.log("Total Even numbers han : " + evenCount);
 
 let numbers = [1, 3, 7, 5, 4, 12];
 let target = 12;
