@@ -443,3 +443,10 @@ function checkEvenOddUpTo(limit) {
 }
 
 checkEvenOddUpTo(10)
+
+
+let carBrands = ["Toyota", "Honda", "Mercedes", "Ferrari", "Porsche", "lamborghini"];
+
+for (let i = 0; i < carBrands.length; i++) {
+    console.log("Mera pasandeeda car brands ya wla han : " + carBrands[i]);
+};
