@@ -450,3 +450,11 @@ let carBrands = ["Toyota", "Honda", "Mercedes", "Ferrari", "Porsche", "lamborghi
 for (let i = 0; i < carBrands.length; i++) {
     console.log("Mera pasandeeda car brands ya wla han : " + carBrands[i]);
 };
+
+let numbers = [5, 12, 32, 14, 57, 3, 67, 10, 25, 2, 7, 9, 1];
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 10) {
+        console.log("Ya numbers bara ha 10 sa : " + numbers[i]);
+    }
+}
