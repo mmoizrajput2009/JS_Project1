@@ -451,10 +451,26 @@ for (let i = 0; i < carBrands.length; i++) {
     console.log("Mera pasandeeda car brands ya wla han : " + carBrands[i]);
 };
 
-let numbers = [5, 12, 32, 14, 57, 3, 67, 10, 25, 2, 7, 9, 1];
+// let numbers = [5, 12, 32, 14, 57, 3, 67, 10, 25, 2, 7, 9, 1];
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] > 10) {
+//         console.log("Ya numbers bara ha 10 sa : " + numbers[i]);
+//     }
+// }
+
+let numbers = [4, 5, 6, 54, 23, 15, 76, 67, 35, 58, 98, 62, 11, 7,99]
+let evenCount = 0
+let oddCount = 0
 
 for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] > 10) {
-        console.log("Ya numbers bara ha 10 sa : " + numbers[i]);
+    if (numbers[i] % 2 === 0) {
+        evenCount++;
+    }
+    if (numbers[i] % 2 !== 0) {
+        oddCount++;
     }
 }
+
+console.log("Total Odd numbers han : " + oddCount);
+console.log("Total Even numbers han : " + evenCount);
