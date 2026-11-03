@@ -393,19 +393,19 @@
 // console.log(checkVotingAge(18));
 // console.log(checkVotingAge(16));
 
-// function calculateGrades(marks) {
-//     if (marks >= 80) {
-//         return "Grade A - Acha marks han!";
-//     } else if (marks >= 50) {
-//         return "Grade B - Marks theek han!";
-//     } else {
-//         return "Fail - Marks bht kaam han!";
-//     }
-// };
+function calculateGrades(marks) {
+    if (marks >= 80) {
+        return "Grade A - Acha marks han!";
+    } else if (marks >= 50) {
+        return "Grade B - Marks theek han!";
+    } else {
+        return "Fail - Marks bht kaam han!";
+    }
+};
 
-// console.log(calculateGrades(85));
-// console.log(calculateGrades(65));
-// console.log(calculateGrades(22));
+console.log(calculateGrades(85));
+console.log(calculateGrades(65));
+console.log(calculateGrades(22));
 
 function getTicketPrices(age, isStudent) {
     if (age <= 12) {
@@ -430,3 +430,16 @@ for (let i = 1; i <= 20; i++) {
 
     }
 }
+
+function checkEvenOddUpTo(limit) {
+    for (let i = 1; i <= limit; i++) {
+        if (i % 2 === 0) {
+            console.log("Even number hai : " + i);
+
+        } else {
+            console.log("Odd number hai : " + i);
+        }
+    }
+}
+
+checkEvenOddUpTo(10)
