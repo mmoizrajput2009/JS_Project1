@@ -488,14 +488,30 @@
 //     }
 // }
 
-let numbers = [2, 4, 6, 8, 10];
-let target = 14
+// let numbers = [2, 4, 6, 8, 10];
+// let target = 14
+
+// function twoSum(number, targetNum) {
+//     for (let i = 0; i < number.length; i++) {
+//         for (let j = i + 1; j < number.length; j++) {
+//             if (number[i] + number[j] === targetNum) {
+//                 return [i, j];
+//             }
+//         }
+//     }
+// }
+
+// let result = twoSum(numbers, target);
+// console.log("Indexes of matching numbers are: ", result);
+
+let numbers = [2, 4, 5, 12, 3, 1, 10];
+let target = 6
 
 function twoSum(number, targetNum) {
     for (let i = 0; i < number.length; i++) {
         for (let j = i + 1; j < number.length; j++) {
             if (number[i] + number[j] === targetNum) {
-                return [i, j];
+                return [i, j]
             }
         }
     }
