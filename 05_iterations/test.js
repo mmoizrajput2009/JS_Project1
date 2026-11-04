@@ -533,14 +533,14 @@
 // console.log("Final reverse Array : ", result);
 
 
-// let l1 = [4, 3, 2];
-// let l2 = [6, 5, 1];
+let l1 = [4, 3, 2];
+let l2 = [6, 5, 1];
 
-// let num1 = Number(l1.reverse().join(""));
-// let num2 = Number(l2.reverse().join(""));
+let num1 = Number(l1.reverse().join(""));
+let num2 = Number(l2.reverse().join(""));
 
-// let totalSum = num1 + num2
-// console.log("Total sum : ", totalSum);
+let totalSum = num1 + num2
+console.log("Total sum : ", totalSum);
 
-// let result = totalSum.toString().split("").reverse().map(Number);
-// console.log("Final reverse Array : ", result);
+let result = totalSum.toString().split("").reverse().map(Number);
+console.log("Final reverse Array : ", result);
