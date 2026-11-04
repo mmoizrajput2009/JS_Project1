@@ -475,15 +475,31 @@
 // console.log("Total Odd numbers han : " + oddCount);
 // console.log("Total Even numbers han : " + evenCount);
 
-let numbers = [1, 3, 7, 5, 4, 12];
-let target = 12;
+// let numbers = [1, 3, 7, 5, 4, 12];
+// let target = 12;
 
-for (let i = 0; i < numbers.length; i++) {
-    for (let j = 0; j < numbers.length; j++) {
-        for (let k = 0; k < numbers.length; k++) {
-            if (numbers[i] + numbers[j] + numbers[k] === target) {
-                console.log(i, j, k);
+// for (let i = 0; i < numbers.length; i++) {
+//     for (let j = 0; j < numbers.length; j++) {
+//         for (let k = 0; k < numbers.length; k++) {
+//             if (numbers[i] + numbers[j] + numbers[k] === target) {
+//                 console.log(i, j, k);
+//             }
+//         }
+//     }
+// }
+
+let numbers = [2, 4, 6, 8, 10];
+let target = 14
+
+function twoSum(number, targetNum) {
+    for (let i = 0; i < number.length; i++) {
+        for (let j = i + 1; j < number.length; j++) {
+            if (number[i] + number[j] === targetNum) {
+                return [i, j];
             }
         }
     }
 }
+
+let result = twoSum(numbers, target);
+console.log("Indexes of matching numbers are: ", result);
