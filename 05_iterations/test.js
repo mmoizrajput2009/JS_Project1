@@ -553,3 +553,6 @@ let num2 = Number(l2.reverse().join(""));
 
 let totalSum = num1 + num2
 console.log("Total sum : ", totalSum);
+
+let result = totalSum.toString().split("").reverse().map(Number);
+console.log("Final reverse Array : ", result);
