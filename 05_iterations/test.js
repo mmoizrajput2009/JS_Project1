@@ -520,14 +520,27 @@
 // let result = twoSum(numbers, target);
 // console.log("Indexes of matching numbers are: ", result);
 
-let l1 = [2, 4, 7];
-let l2 = [9, 7, 2];
+// let l1 = [2, 4, 7];
+// let l2 = [9, 7, 2];
+
+// let num1 = Number(l1.reverse().join(""));
+// let num2 = Number(l2.reverse().join(""));
+
+// let totalSum = num1 + num2
+// console.log("Total Sum : ", totalSum);
+
+// let result = totalSum.toString().split("").reverse().map(Number);
+// console.log("Final reverse Array : ", result);
+
+
+let l1 = [4, 3, 2];
+let l2 = [6, 5, 1];
 
 let num1 = Number(l1.reverse().join(""));
 let num2 = Number(l2.reverse().join(""));
 
 let totalSum = num1 + num2
-console.log("Total Sum : ", totalSum);
+console.log("Total sum : ", totalSum);
 
 let result = totalSum.toString().split("").reverse().map(Number);
 console.log("Final reverse Array : ", result);
