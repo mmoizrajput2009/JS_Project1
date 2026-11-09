@@ -583,9 +583,7 @@ function twoSum(number, targetNum) {
             if (numbers[i] + numbers[j] === targetNum) {
                 return [i, j]
             }
-
         }
-
     }
 }
 
