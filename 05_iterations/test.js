@@ -545,14 +545,49 @@
 // let result = totalSum.toString().split("").reverse().map(Number);
 // console.log("Final reverse Array : ", result);
 
-let l1 = [5, 1, 8];
-let l2 = [8, 2, 7];
+// let l1 = [5, 1, 8];
+// let l2 = [8, 2, 7];
 
-let num1 = Number(l1.reverse().join(""));
-let num2 = Number(l2.reverse().join(""));
+// let num1 = Number(l1.reverse().join(""));
+// let num2 = Number(l2.reverse().join(""));
 
-let totalSum = num1 + num2
-console.log("Total sum : ", totalSum);
+// let totalSum = num1 + num2
+// console.log("Total sum : ", totalSum);
 
-let result = totalSum.toString().split("").reverse().map(Number);
-console.log("Final reverse Array : ", result);
+// let result = totalSum.toString().split("").reverse().map(Number);
+// console.log("Final reverse Array : ", result);
+
+// let numbers = [2, 4, 5, 12, 3, 1, 10];
+// let target = 6
+
+// function twoSum(number, targetNum) {
+//     for (let i = 0; i < number.length; i++) {
+//         for (let j = i + 1; j < number.length; j++) {
+//             if (number[i] + number[j] === targetNum) {
+//                 return [i, j]
+//             }
+//         }
+//     }
+// }
+
+// let result = twoSum(numbers, target);
+// console.log("Indexes of matching numbers are: ", result);
+
+
+let numbers = [1, 5, 2, 6, 3, 8];
+let target = 7;
+
+function twoSum(number, targetNum) {
+    for (let i = 0; i < number.length; i++) {
+        for (let j = i + 1; j < number.length; j++) {
+            if (numbers[i] + numbers[j] === targetNum) {
+                return [i, j]
+            }
+
+        }
+
+    }
+}
+
+let result = twoSum(numbers, target);
+console.log(result);
