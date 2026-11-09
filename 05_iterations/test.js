@@ -574,18 +574,43 @@
 // console.log("Indexes of matching numbers are: ", result);
 
 
-let numbers = [1, 5, 2, 6, 3, 8];
-let target = 7;
+// let numbers = [1, 5, 2, 6, 3, 8];
+// let target = 7;
 
-function twoSum(number, targetNum) {
-    for (let i = 0; i < number.length; i++) {
-        for (let j = i + 1; j < number.length; j++) {
-            if (numbers[i] + numbers[j] === targetNum) {
-                return [i, j]
-            }
-        }
-    }
-}
+// function twoSum(number, targetNum) {
+//     for (let i = 0; i < number.length; i++) {
+//         for (let j = i + 1; j < number.length; j++) {
+//             if (numbers[i] + numbers[j] === targetNum) {
+//                 return [i, j]
+//             }
+//         }
+//     }
+// }
 
-let result = twoSum(numbers, target);
-console.log(result);
+// let result = twoSum(numbers, target);
+// console.log(result);
+
+// let l1 = [5, 1, 8];
+// let l2 = [8, 2, 7];
+
+// let num1 = Number(l1.reverse().join(""));
+// let num2 = Number(l2.reverse().join(""));
+
+// let totalSum = num1 + num2
+// console.log("Total sum : ", totalSum);
+
+// // let result = totalSum.toString().split("").reverse().map(Number);
+// // console.log("Final reverse Array : ", result);
+
+
+let l1 = [5, 7, 6];
+let l2 = [9, 1, 3];
+
+let num1 = Number(l1.reverse().join(""));
+let num2 = Number(l2.reverse().join(""));
+
+let totalSum = num1 + num2
+console.log("Total Sum : ", totalSum);
+
+let result = totalSum.toString().split("").reverse().map(Number);
+console.log("Final reverse Array is : ", result);
