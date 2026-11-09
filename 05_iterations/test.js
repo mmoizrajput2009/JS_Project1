@@ -614,3 +614,17 @@ console.log("Total Sum : ", totalSum);
 
 let result = totalSum.toString().split("").reverse().map(Number);
 console.log("Final reverse Array is : ", result);
+
+const gamingUser = {
+    username: "Moji_Pro",
+    level: 42,
+    isOnline: true,
+    // Object method
+    startGame: function () {
+        console.log(`${this.username} is launching the game! 🎮`);
+    }
+};
+
+// Accessing properties
+console.log(gamingUser.username); // Output: Moji_Pro
+gamingUser.startGame();
