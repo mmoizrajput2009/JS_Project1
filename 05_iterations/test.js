@@ -603,28 +603,49 @@
 // // console.log("Final reverse Array : ", result);
 
 
-let l1 = [5, 7, 6];
-let l2 = [9, 1, 3];
+// let l1 = [5, 7, 6];
+// let l2 = [9, 1, 3];
 
-let num1 = Number(l1.reverse().join(""));
-let num2 = Number(l2.reverse().join(""));
+// let num1 = Number(l1.reverse().join(""));
+// let num2 = Number(l2.reverse().join(""));
 
-let totalSum = num1 + num2
-console.log("Total Sum : ", totalSum);
+// let totalSum = num1 + num2
+// console.log("Total Sum : ", totalSum);
 
-let result = totalSum.toString().split("").reverse().map(Number);
-console.log("Final reverse Array is : ", result);
+// let result = totalSum.toString().split("").reverse().map(Number);
+// console.log("Final reverse Array is : ", result);
 
-const gamingUser = {
-    username: "Moji_Pro",
-    level: 42,
-    isOnline: true,
-    // Object method
-    startGame: function () {
-        console.log(`${this.username} is launching the game! 🎮`);
+// const gamingUser = {
+//     username: "Moji_Pro",
+//     level: 42,
+//     isOnline: true,
+//     // Object method
+//     startGame: function () {
+//         console.log(`${this.username} is launching the game! 🎮`);
+//     }
+// };
+
+// // Accessing properties
+// console.log(gamingUser.username); // Output: Moji_Pro
+// gamingUser.startGame();
+
+function checkNumber(numbers) {
+
+    if (numbers >= 50) {
+        return `Marks = ${numbers} -> Grade A : Pass Excellent Marks`;
+    } else if (numbers >= 30) {
+        return `Marks = ${numbers} -> Grade B : Pass Decent Marks`;
+    } else {
+        return `Marks = ${numbers} -> Grade F : Fail need improvement`;
     }
-};
+}
 
-// Accessing properties
-console.log(gamingUser.username); // Output: Moji_Pro
-gamingUser.startGame();
+console.log("Final result is : ", checkNumber(56));
+console.log("Final result is : ", checkNumber(65));
+console.log("Final result is : ", checkNumber(36));
+console.log("Final result is : ", checkNumber(45));
+console.log("Final result is : ", checkNumber(26));
+console.log("Final result is : ", checkNumber(12));
+console.log("Final result is : ", checkNumber(15));
+console.log("Final result is : ", checkNumber(32));
+console.log("Final result is : ", checkNumber(50));
