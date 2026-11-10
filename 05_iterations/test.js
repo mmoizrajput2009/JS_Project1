@@ -649,3 +649,28 @@ console.log("Final result is : ", checkNumber(12));
 console.log("Final result is : ", checkNumber(15));
 console.log("Final result is : ", checkNumber(32));
 console.log("Final result is : ", checkNumber(50));
+
+
+const cart = [
+    { name: "Laptop Bag", price: 1500 },
+    { name: "Wireless Mouse", price: 800 },
+    { name: "Mechanical Keyboard", price: 3500 },
+    { name: "USB Cable", price: 400 }
+];
+
+function calculateBills(itemsList) {
+    let total = 0;
+
+    for (let i = 0; i < itemsList.length; i++) {
+
+        let currentItem = itemsList[i];
+
+        if (currentItem.price >= 1000) {
+            total = total + currentItem.price;
+        }
+
+    }
+    return `Total Bill for premium items is : RS : ${total}`;
+}
+
+console.log(calculateBills(cart));
