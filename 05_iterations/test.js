@@ -674,3 +674,21 @@ function calculateBills(itemsList) {
 }
 
 console.log(calculateBills(cart));
+
+function calculateGrades(studentNumbers) {
+
+    if (studentNumbers >= 35) {
+        return `Marks = ${studentNumbers} -> Grade A : Pass`
+    } else if (studentNumbers > 25) {
+        return `Marks = ${studentNumbers} -> Grade B : Pass`
+    } else if (studentNumbers >= 15) {
+        return `Marks = ${studentNumbers} -> Grade C : Pass`
+    } else {
+        return `Marks = ${studentNumbers} -> Grade F : Fail`
+    }
+}
+console.log(calculateGrades(54));
+console.log(calculateGrades(27));
+console.log(calculateGrades(21));
+console.log(calculateGrades(16));
+console.log(calculateGrades(9));
