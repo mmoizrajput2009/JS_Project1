@@ -728,3 +728,15 @@ function twoSum(numbers2, target2) {
     }
 }
 console.log("First Example : ", twoSum(numbers2, target2));
+
+let l1 = [2, 4, 3];
+let l2 = [5, 6, 4];
+
+let num1 = Number(l1.reverse().join(""));
+let num2 = Number(l2.reverse().join(""));
+
+let totalSum = num1 + num2;
+console.log("Total Sum : ", totalSum);
+
+let result = totalSum.toString().split("").reverse().map(Number);
+console.log("Final Result : ", result);
