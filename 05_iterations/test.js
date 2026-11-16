@@ -777,3 +777,19 @@ console.log("Total Sum : ", totalSum);
 
 let result = totalSum.toString().split("").reverse().map(Number);
 console.log("Final Result : ", result);
+
+function isPalindrome(x) {
+    // 1. Original number ko string banao
+    let seedha = x.toString();
+
+    // 2. Tumhari apni trick: toro -> ulta karo -> jor do
+    let ulta = seedha.split("").reverse().join("");
+
+    // 3. Dono ko compare karo (barabar hue toh true, warna false)
+    return seedha === ulta;
+}
+
+// --- Teeno Examples Test Karte Hain ---
+console.log("Example 1 (121):", isPalindrome(121));   // true
+console.log("Example 2 (-121):", isPalindrome(-121)); // false
+console.log("Example 3 (10):", isPalindrome(10));     // false
