@@ -793,3 +793,14 @@ function isPalindrome(x) {
 console.log("Example 1 (121):", isPalindrome(121));   // true
 console.log("Example 2 (-121):", isPalindrome(-121)); // false
 console.log("Example 3 (10):", isPalindrome(10));     // false
+
+function isPalindrome(x) {
+    let right = x.toString();
+    let left = right.split("").reverse().join("");
+
+    return right === left
+}
+
+console.log("Example 1 (212) : ", isPalindrome(212));
+console.log("Example 2 (-212) : ", isPalindrome(-212));
+console.log("Example 3 (50) : ", isPalindrome(55));
