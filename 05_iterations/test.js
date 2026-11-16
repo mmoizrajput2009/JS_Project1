@@ -729,11 +729,48 @@ function twoSum(numbers2, target2) {
 }
 console.log("First Example : ", twoSum(numbers2, target2));
 
-let l1 = [2, 4, 3];
-let l2 = [5, 6, 4];
+// let l1 = [2, 4, 3];
+// let l2 = [5, 6, 4];
 
-let num1 = Number(l1.reverse().join(""));
-let num2 = Number(l2.reverse().join(""));
+// let num1 = Number(l1.reverse().join(""));
+// let num2 = Number(l2.reverse().join(""));
+
+// let totalSum = num1 + num2;
+// console.log("Total Sum : ", totalSum);
+
+// let result = totalSum.toString().split("").reverse().map(Number);
+// console.log("Final Result : ", result);
+
+// let l1 = [0];
+// let l2 = [0];
+
+// let num1 = Number(l1.reverse().join(""));
+// let num2 = Number(l2.reverse().join(""));
+
+// let totalSum = num1 + num2;
+// console.log("Total Sum : ", totalSum);
+
+// let result = totalSum.toString().split("").reverse().map(Number);
+// console.log("Final Result : ", result);
+
+
+// let l1 = [9, 9, 9, 9, 9, 9, 9];
+// let l2 = [9, 9, 9, 9];
+
+// let num1 = Number(l1.reverse().join(""));
+// let num2 = Number(l2.reverse().join(""));
+
+// let totalSum = num1 + num2;
+// console.log("Total Sum : ", totalSum);
+
+// let result = totalSum.toString().split("").reverse().map(Number);
+// console.log("Final Result : ", result);
+
+let l1 = [9, 9, 9, 9, 9, 9, 9, 2, 4, 5, 6, 7, 8, 9, 0, 5, 4, 3, 1, 3, 5, 4, 6, 7, 0];
+let l2 = [9, 9, 9, 9, 2, 4, 5, 6, 7, 8, 9, 0, 5, 4, 3, 1, 3, 5, 4, 6, 7, 0];
+
+let num1 = BigInt(l1.reverse().join(""));
+let num2 = BigInt(l2.reverse().join(""));
 
 let totalSum = num1 + num2;
 console.log("Total Sum : ", totalSum);
