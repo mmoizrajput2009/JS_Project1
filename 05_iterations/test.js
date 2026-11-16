@@ -692,3 +692,39 @@ console.log(calculateGrades(27));
 console.log(calculateGrades(21));
 console.log(calculateGrades(16));
 console.log(calculateGrades(9));
+
+const numbers = [7, 2, 1, 4, 5];
+const target = 8;
+
+function twoSum(numbers, target) {
+    for (let i = 0; i < numbers.length; i++) {
+
+        for (let j = i + 1; j < numbers.length; j++) {
+
+            if (numbers[i] + numbers[j] === target) {
+                return [i, j]
+            }
+
+        }
+
+    }
+}
+console.log("First Example : ", twoSum(numbers, target));
+
+const numbers2 = [7, 6, 9, 3, 2, 4, 1];
+const target2 = 8;
+
+function twoSum(numbers2, target2) {
+    for (let i = 0; i < numbers2.length; i++) {
+
+        for (let j = i + 1; j < numbers2.length; j++) {
+
+            if (numbers2[i] + numbers2[j] === target2) {
+                return [i, j]
+            }
+
+        }
+
+    }
+}
+console.log("First Example : ", twoSum(numbers2, target2));
