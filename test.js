@@ -32,31 +32,47 @@
 
 // 3 7 9
 
-for (let i = 0; i <= 10; i++) {
-    if (i == 3) {
+// for (let i = 0; i <= 10; i++) {
+//     if (i == 3) {
 
-    } else if (i == 7) {
+//     } else if (i == 7) {
 
-    } else if (i == 9) {
+//     } else if (i == 9) {
+
+//     } else {
+//         console.log(i);
+
+//     }
+// }
+
+// // 3 7 9
+
+// let number = 1;
+
+// if (number == 3) {
+
+
+// } else if (number == 7) {
+
+
+// } else if (number == 9) {
+
+// } else {
+//     console.log(number);
+// }
+
+
+function checkAge(age) {
+    if (age < 18) {
+        console.log("You are underage");
+    } else if (age >= 18 && age <= 56) {
+        console.log("You are an Adult");
 
     } else {
-        console.log(i);
-
+        console.log("You are a senior citizen");
     }
-}
+};
 
-// 3 7 9
-
-let number = 1;
-
-if (number == 3) {
-
-
-} else if (number == 7) {
-
-
-} else if (number == 9) {
-
-} else {
-    console.log(number);
-}
+checkAge(17);
+checkAge(25);
+checkAge(65);
