@@ -1,1 +1,62 @@
-console.log("Moiz");
+// let palindrome = "1211";
+
+// function isPalindrome(x) {
+//     isPalindrome = x
+//     return "True";
+
+
+//     isPalindrome = x
+//     return "False";
+
+// }
+// console.log(isPalindrome(palindrome));
+
+
+// 01: mara task ha ka ma aik string dakho ka kya wo aik palindrome ha ka nhi. 
+// 02: ma aik value lo ga.
+// 03: is value ko mana reverse kar diya. 
+// 04: or phir mana original ko or reverse value ko check kiya ka.
+// 06: agr palindrome ha to True ha (y1221y) Example.
+// 07: agr palindrome nhi ha to False ha (eeeeeree) Example.
+
+// let num1 = 4;
+// let num2 = 3;
+
+// function twoSum(val1, val2) {
+//     let result = val1 + val2;
+
+//     return result;
+// };
+
+// console.log(twoSum(num1, num2));
+
+// 3 7 9
+
+for (let i = 0; i <= 10; i++) {
+    if (i == 3) {
+
+    } else if (i == 7) {
+
+    } else if (i == 9) {
+
+    } else {
+        console.log(i);
+
+    }
+}
+
+// 3 7 9
+
+let number = 1;
+
+if (number == 3) {
+
+
+} else if (number == 7) {
+
+
+} else if (number == 9) {
+
+} else {
+    console.log(number);
+}
