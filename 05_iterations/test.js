@@ -629,105 +629,105 @@
 // console.log(gamingUser.username); // Output: Moji_Pro
 // gamingUser.startGame();
 
-function checkNumber(numbers) {
+// function checkNumber(numbers) {
 
-    if (numbers >= 50) {
-        return `Marks = ${numbers} -> Grade A : Pass Excellent Marks`;
-    } else if (numbers >= 30) {
-        return `Marks = ${numbers} -> Grade B : Pass Decent Marks`;
-    } else {
-        return `Marks = ${numbers} -> Grade F : Fail need improvement`;
-    }
-}
+//     if (numbers >= 50) {
+//         return `Marks = ${numbers} -> Grade A : Pass Excellent Marks`;
+//     } else if (numbers >= 30) {
+//         return `Marks = ${numbers} -> Grade B : Pass Decent Marks`;
+//     } else {
+//         return `Marks = ${numbers} -> Grade F : Fail need improvement`;
+//     }
+// }
 
-console.log("Final result is : ", checkNumber(56));
-console.log("Final result is : ", checkNumber(65));
-console.log("Final result is : ", checkNumber(36));
-console.log("Final result is : ", checkNumber(45));
-console.log("Final result is : ", checkNumber(26));
-console.log("Final result is : ", checkNumber(12));
-console.log("Final result is : ", checkNumber(15));
-console.log("Final result is : ", checkNumber(32));
-console.log("Final result is : ", checkNumber(50));
+// console.log("Final result is : ", checkNumber(56));
+// console.log("Final result is : ", checkNumber(65));
+// console.log("Final result is : ", checkNumber(36));
+// console.log("Final result is : ", checkNumber(45));
+// console.log("Final result is : ", checkNumber(26));
+// console.log("Final result is : ", checkNumber(12));
+// console.log("Final result is : ", checkNumber(15));
+// console.log("Final result is : ", checkNumber(32));
+// console.log("Final result is : ", checkNumber(50));
 
 
-const cart = [
-    { name: "Laptop Bag", price: 1500 },
-    { name: "Wireless Mouse", price: 800 },
-    { name: "Mechanical Keyboard", price: 3500 },
-    { name: "USB Cable", price: 400 }
-];
+// const cart = [
+//     { name: "Laptop Bag", price: 1500 },
+//     { name: "Wireless Mouse", price: 800 },
+//     { name: "Mechanical Keyboard", price: 3500 },
+//     { name: "USB Cable", price: 400 }
+// ];
 
-function calculateBills(itemsList) {
-    let total = 0;
+// function calculateBills(itemsList) {
+//     let total = 0;
 
-    for (let i = 0; i < itemsList.length; i++) {
+//     for (let i = 0; i < itemsList.length; i++) {
 
-        let currentItem = itemsList[i];
+//         let currentItem = itemsList[i];
 
-        if (currentItem.price >= 1000) {
-            total = total + currentItem.price;
-        }
+//         if (currentItem.price >= 1000) {
+//             total = total + currentItem.price;
+//         }
 
-    }
-    return `Total Bill for premium items is : RS : ${total}`;
-}
+//     }
+//     return `Total Bill for premium items is : RS : ${total}`;
+// }
 
-console.log(calculateBills(cart));
+// console.log(calculateBills(cart));
 
-function calculateGrades(studentNumbers) {
+// function calculateGrades(studentNumbers) {
 
-    if (studentNumbers >= 35) {
-        return `Marks = ${studentNumbers} -> Grade A : Pass`
-    } else if (studentNumbers > 25) {
-        return `Marks = ${studentNumbers} -> Grade B : Pass`
-    } else if (studentNumbers >= 15) {
-        return `Marks = ${studentNumbers} -> Grade C : Pass`
-    } else {
-        return `Marks = ${studentNumbers} -> Grade F : Fail`
-    }
-}
-console.log(calculateGrades(54));
-console.log(calculateGrades(27));
-console.log(calculateGrades(21));
-console.log(calculateGrades(16));
-console.log(calculateGrades(9));
+//     if (studentNumbers >= 35) {
+//         return `Marks = ${studentNumbers} -> Grade A : Pass`
+//     } else if (studentNumbers > 25) {
+//         return `Marks = ${studentNumbers} -> Grade B : Pass`
+//     } else if (studentNumbers >= 15) {
+//         return `Marks = ${studentNumbers} -> Grade C : Pass`
+//     } else {
+//         return `Marks = ${studentNumbers} -> Grade F : Fail`
+//     }
+// }
+// console.log(calculateGrades(54));
+// console.log(calculateGrades(27));
+// console.log(calculateGrades(21));
+// console.log(calculateGrades(16));
+// console.log(calculateGrades(9));
 
-const numbers = [7, 2, 1, 4, 5];
-const target = 8;
+// const numbers = [7, 2, 1, 4, 5];
+// const target = 8;
 
-function twoSum(numbers, target) {
-    for (let i = 0; i < numbers.length; i++) {
+// function twoSum(numbers, target) {
+//     for (let i = 0; i < numbers.length; i++) {
 
-        for (let j = i + 1; j < numbers.length; j++) {
+//         for (let j = i + 1; j < numbers.length; j++) {
 
-            if (numbers[i] + numbers[j] === target) {
-                return [i, j]
-            }
+//             if (numbers[i] + numbers[j] === target) {
+//                 return [i, j]
+//             }
 
-        }
+//         }
 
-    }
-}
-console.log("First Example : ", twoSum(numbers, target));
+//     }
+// }
+// console.log("First Example : ", twoSum(numbers, target));
 
-const numbers2 = [7, 6, 9, 3, 2, 4, 1];
-const target2 = 8;
+// const numbers2 = [7, 6, 9, 3, 2, 4, 1];
+// const target2 = 8;
 
-function twoSum(numbers2, target2) {
-    for (let i = 0; i < numbers2.length; i++) {
+// function twoSum(numbers2, target2) {
+//     for (let i = 0; i < numbers2.length; i++) {
 
-        for (let j = i + 1; j < numbers2.length; j++) {
+//         for (let j = i + 1; j < numbers2.length; j++) {
 
-            if (numbers2[i] + numbers2[j] === target2) {
-                return [i, j]
-            }
+//             if (numbers2[i] + numbers2[j] === target2) {
+//                 return [i, j]
+//             }
 
-        }
+//         }
 
-    }
-}
-console.log("First Example : ", twoSum(numbers2, target2));
+//     }
+// }
+// console.log("First Example : ", twoSum(numbers2, target2));
 
 // let l1 = [2, 4, 3];
 // let l2 = [5, 6, 4];
@@ -766,41 +766,68 @@ console.log("First Example : ", twoSum(numbers2, target2));
 // let result = totalSum.toString().split("").reverse().map(Number);
 // console.log("Final Result : ", result);
 
-let l1 = [9, 9, 9, 9, 9, 9, 9, 2, 4, 5, 6, 7, 8, 9, 0, 5, 4, 3, 1, 3, 5, 4, 6, 7, 0];
-let l2 = [9, 9, 9, 9, 2, 4, 5, 6, 7, 8, 9, 0, 5, 4, 3, 1, 3, 5, 4, 6, 7, 0];
+// let l1 = [9, 9, 9, 9, 9, 9, 9, 2, 4, 5, 6, 7, 8, 9, 0, 5, 4, 3, 1, 3, 5, 4, 6, 7, 0];
+// let l2 = [9, 9, 9, 9, 2, 4, 5, 6, 7, 8, 9, 0, 5, 4, 3, 1, 3, 5, 4, 6, 7, 0];
 
-let num1 = BigInt(l1.reverse().join(""));
-let num2 = BigInt(l2.reverse().join(""));
+// let num1 = BigInt(l1.reverse().join(""));
+// let num2 = BigInt(l2.reverse().join(""));
 
-let totalSum = num1 + num2;
-console.log("Total Sum : ", totalSum);
+// let totalSum = num1 + num2;
+// console.log("Total Sum : ", totalSum);
 
-let result = totalSum.toString().split("").reverse().map(Number);
-console.log("Final Result : ", result);
+// let result = totalSum.toString().split("").reverse().map(Number);
+// console.log("Final Result : ", result);
+
+// function isPalindrome(x) {
+//     // 1. Original number ko string banao
+//     let seedha = x.toString();
+
+//     // 2. Tumhari apni trick: toro -> ulta karo -> jor do
+//     let ulta = seedha.split("").reverse().join("");
+
+//     // 3. Dono ko compare karo (barabar hue toh true, warna false)
+//     return seedha === ulta;
+// }
+
+// // --- Teeno Examples Test Karte Hain ---
+// console.log("Example 1 (121):", isPalindrome(121));   // true
+// console.log("Example 2 (-121):", isPalindrome(-121)); // false
+// console.log("Example 3 (10):", isPalindrome(10));     // false
+
+// function isPalindrome(x) {
+//     let right = x.toString();
+//     let left = right.split("").reverse().join("");
+
+//     return right === left
+// }
+
+// console.log("Example 1 (212) : ", isPalindrome(212));
+// console.log("Example 2 (-212) : ", isPalindrome(-212));
+// console.log("Example 3 (50) : ", isPalindrome(55));
 
 function isPalindrome(x) {
-    // 1. Original number ko string banao
-    let seedha = x.toString();
+    // Rule 1 & 2: Negative numbers aur 0 par khatam hone wale numbers palindrome nahi ho sakte
+    if (x < 0 || (x % 10 === 0 && x !== 0)) {
+        return false;
+    }
 
-    // 2. Tumhari apni trick: toro -> ulta karo -> jor do
-    let ulta = seedha.split("").reverse().join("");
+    let reversedHalf = 0;
+    
+    // Hum tab tak loop chalayenge jab tak x, reversedHalf se bada ho
+    // Matlab hum number ka sirf aakhri aadha hissa ulta kar rahe hain!
+    while (x > reversedHalf) {
+        let digit = x % 10;
+        reversedHalf = reversedHalf * 10 + digit;
+        x = Math.floor(x / 10);
+    }
 
-    // 3. Dono ko compare karo (barabar hue toh true, warna false)
-    return seedha === ulta;
+    // Jab number mein odd digits hon (jaise 121), toh beech wala digit (1) 
+    // hatane ke liye hum `reversedHalf / 10` kar dete hain.
+    // Even digits ke liye `x === reversedHalf` direct match ho jayega.
+    return x === reversedHalf || x === Math.floor(reversedHalf / 10);
 }
 
-// --- Teeno Examples Test Karte Hain ---
-console.log("Example 1 (121):", isPalindrome(121));   // true
-console.log("Example 2 (-121):", isPalindrome(-121)); // false
-console.log("Example 3 (10):", isPalindrome(10));     // false
-
-function isPalindrome(x) {
-    let right = x.toString();
-    let left = right.split("").reverse().join("");
-
-    return right === left
-}
-
-console.log("Example 1 (212) : ", isPalindrome(212));
-console.log("Example 2 (-212) : ", isPalindrome(-212));
-console.log("Example 3 (50) : ", isPalindrome(55));
+// Test karke dekhte hain:
+console.log(isPalindrome(121));  // Output: true
+console.log(isPalindrome(-121)); // Output: false
+console.log(isPalindrome(10));   // Output: false
