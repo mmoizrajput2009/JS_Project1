@@ -77,15 +77,24 @@ checkAge(17);
 checkAge(25);
 checkAge(65);
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-function printNumbers(numbers) {
-    for (let i = 0; i < 20; i = i + 2) {
-        console.log(numbers(i));
+// ----------------------------------------------\\
+
+
+function printNumbers() {
+
+    for (let i = 1; i <= 20; i++) {
+
+        if (i % 2 === 0) {
+            console.log(i);
+        }
 
     }
-};
-console.log(numbers);
 
+}
+
+printNumbers();
+
+// ----------------------------------------------\\
 
 let maxNumbers = [10, 15, 66, 42, 12, 32];
 
@@ -103,3 +112,17 @@ function findMax(numbers) {
 }
 
 console.log(findMax(maxNumbers));
+
+// ----------------------------------------------\\
+
+function checkNumber(number) {
+    if (number % 2 === 0) {
+        console.log("Even number");
+    } else {
+        console.log("Odd number");
+    }
+}
+checkNumber(7);
+checkNumber(10);
+checkNumber(13);
+checkNumber(22);
