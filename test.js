@@ -61,6 +61,8 @@
 //     console.log(number);
 // }
 
+// ----------------------------------------------\\
+
 
 function checkAge(age) {
     if (age < 18) {
@@ -126,3 +128,25 @@ checkNumber(7);
 checkNumber(10);
 checkNumber(13);
 checkNumber(22);
+
+// ----------------------------------------------\\
+
+function multiplicationTable(num) {
+    if (num < 0) {
+        console.log("Invalid number");
+        return
+    }
+
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${num} * ${i} = ${num * i}`);
+    }
+};
+
+multiplicationTable(2);
+multiplicationTable(3);
+multiplicationTable(4);
+multiplicationTable(5);
+multiplicationTable(6);
+
+// ----------------------------------------------\\
+
