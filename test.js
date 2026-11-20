@@ -98,24 +98,24 @@
 
 // ----------------------------------------------\\
 
-let maxNumbers = [10, 15, 66, 42, 12, 32];
+// let maxNumbers = [10, 15, 66, 42, 12, 32];
 
-function findMax(numbers) {
-    let max = numbers[0];
+// function findMax(numbers) {
+//     let max = numbers[0];
 
-    for (let i = 1; i < numbers.length; i++) {
+//     for (let i = 1; i < numbers.length; i++) {
 
-        if (numbers[i] > max) {
-            max = numbers[i];
-        }
-    }
+//         if (numbers[i] > max) {
+//             max = numbers[i];
+//         }
+//     }
 
-    return 3;
-}
+//     return 3;
+// }
 
-let result = findMax(maxNumbers)
+// let result = findMax(maxNumbers)
 
-console.log(result);
+// console.log(result);
 
 // ----------------------------------------------\\
 
@@ -184,9 +184,9 @@ console.log(result);
 //     };
 // }
 
-// let studentMarks = [85, 40, 95, 55, 60, 70];
+// let studentMarks1 = [85, 40, 95, 55, 60, 70];
 
-// // let result = calculateResult(studentMarks);
+// let result = calculateResult(studentMarks1);
 
 // console.log("Total Marks : ", result.total);
 // console.log("Average : ", result.average);
@@ -195,24 +195,51 @@ console.log(result);
 // ----------------------------------------------\\
 
 
-let smallNumbers = [10, 15, 66, 42, 12, 32];
+// let smallNumbers = [10, 15, 66, 42, 1, 32];
 
-function findSmaller(numbers) {
-    let small = numbers[0];
+// function findSmaller(numbers) {
+//     let small = numbers[0];
 
-    for (let i = 1; i < numbers.length; i++) {
-        if (numbers[i] < small) {
-            small = numbers[i]
+//     for (let i = 1; i < numbers.length; i++) {
+//         if (numbers[i] < small) {
+//             small = numbers[i]
 
-        }
-        return small
-    };
+//         }
 
-};
 
-let result2 = findSmaller(smallNumbers);
-console.log(result2);
+
+//     };
+//     return small
+
+// };
+
+// let result2 = findSmaller(smallNumbers);
+// console.log(result2);
 
 // ----------------------------------------------\\
 
+// let car = "mehran";
 
+// let carBrand = {
+//     Brand: 1998,
+//     car: car,
+//     color: "Red"
+// };
+
+// console.log(carBrand.Brand);
+
+// let names = ["Ali", "moiz", "bilal"];
+
+
+// for (let i = 0; i <= 2; i++) {
+//     console.log(names[i]);
+
+// };
+
+let names2 = ["Ali", "moiz", "bilal"];
+
+
+for (let i = 0; i <= 2; i++) {
+    console.log(names2[i]);
+
+};
