@@ -189,3 +189,5 @@ let result = calculateResult(studentMarks);
 console.log("Total Marks : ", result.total);
 console.log("Average : ", result.average);
 console.log("Grades : ", result.grade);
+
+// ----------------------------------------------\\
