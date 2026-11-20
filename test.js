@@ -236,10 +236,25 @@
 
 // };
 
-let names2 = ["Ali", "moiz", "bilal"];
+// let names = ["Ronaldo", "Messi", "Neymar"];
 
+// for (let i = 0; i <= 2; i++) {
+//     if (names[i] !== "Messi") {
+//         console.log(names[i]);
+//     }
+// };
 
-for (let i = 0; i <= 2; i++) {
-    console.log(names2[i]);
+let names = ["Hello", "Sulululu", "Meow", "Gupp", "Gupp", "Suiiiiii"]
 
+function printWithoutName(a, b) {
+    for (let i = 0; i <= 5; i++) {
+
+        if (a[i] !== b) {
+
+            console.log(a[i]);
+
+        }
+    }
 };
+
+printWithoutName(names, "Suiiiiii")
