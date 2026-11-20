@@ -64,37 +64,37 @@
 // ----------------------------------------------\\
 
 
-function checkAge(age) {
-    if (age < 18) {
-        console.log("You are underage");
-    } else if (age >= 18 && age <= 56) {
-        console.log("You are an Adult");
+// function checkAge(age) {
+//     if (age < 18) {
+//         console.log("You are underage");
+//     } else if (age >= 18 && age <= 56) {
+//         console.log("You are an Adult");
 
-    } else {
-        console.log("You are a senior citizen");
-    }
-};
+//     } else {
+//         console.log("You are a senior citizen");
+//     }
+// };
 
-checkAge(17);
-checkAge(25);
-checkAge(65);
+// checkAge(17);
+// checkAge(25);
+// checkAge(65);
 
 // ----------------------------------------------\\
 
 
-function printNumbers() {
+// function printNumbers() {
 
-    for (let i = 1; i <= 20; i++) {
+//     for (let i = 1; i <= 20; i++) {
 
-        if (i % 2 === 0) {
-            console.log(i);
-        }
+//         if (i % 2 === 0) {
+//             console.log(i);
+//         }
 
-    }
+//     }
 
-}
+// }
 
-printNumbers();
+// printNumbers();
 
 // ----------------------------------------------\\
 
@@ -110,84 +110,109 @@ function findMax(numbers) {
         }
     }
 
-    return max;
+    return 3;
 }
 
-console.log(findMax(maxNumbers));
+let result = findMax(maxNumbers)
+
+console.log(result);
 
 // ----------------------------------------------\\
 
-function checkNumber(number) {
-    if (number % 2 === 0) {
-        console.log("Even number");
-    } else {
-        console.log("Odd number");
-    }
-}
-checkNumber(7);
-checkNumber(10);
-checkNumber(13);
-checkNumber(22);
+// function checkNumber(number) {
+//     if (number % 2 === 0) {
+//         console.log("Even number");
+//     } else {
+//         console.log("Odd number");
+//     }
+// }
+// checkNumber(7);
+// checkNumber(10);
+// checkNumber(13);
+// checkNumber(22);
 
 // ----------------------------------------------\\
 
-function multiplicationTable(num) {
-    if (num < 0) {
-        console.log("Invalid number");
-        return
-    }
+// function multiplicationTable(num) {
+//     if (num < 0) {
+//         console.log("Invalid number");
+//         return
+//     }
 
-    for (let i = 1; i <= 10; i++) {
-        console.log(`${num} × ${i} = ${num * i}`);
-    }
+//     for (let i = 1; i <= 10; i++) {
+//         console.log(`${num} × ${i} = ${num * i}`);
+//     }
+// };
+
+// multiplicationTable(2);
+// multiplicationTable(3);
+// multiplicationTable(4);
+// multiplicationTable(5);
+// multiplicationTable(6);
+
+// ----------------------------------------------\\
+
+// function calculateResult(marks) {
+//     let total = 0;
+
+//     for (let i = 0; i < marks.length; i++) {
+//         total = total + marks[i];
+//     }
+
+//     let average = total / marks.length;
+
+//     let grade;
+
+//     if (average >= 90) {
+//         grade = "A +";
+//     } else if (average >= 80) {
+//         grade = "A";
+//     } else if (average >= 70) {
+//         grade = "B ";
+//     } else if (average >= 60) {
+//         grade = "C";
+//     } else if (average >= 50) {
+//         grade = "D";
+//     } else {
+//         grade = "F : Fail"
+//     }
+
+//     return {
+//         total: total,
+//         average: average,
+//         grade: grade
+//     };
+// }
+
+// let studentMarks = [85, 40, 95, 55, 60, 70];
+
+// // let result = calculateResult(studentMarks);
+
+// console.log("Total Marks : ", result.total);
+// console.log("Average : ", result.average);
+// console.log("Grades : ", result.grade);
+
+// ----------------------------------------------\\
+
+
+let smallNumbers = [10, 15, 66, 42, 12, 32];
+
+function findSmaller(numbers) {
+    let small = numbers[0];
+
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] < small) {
+            small = numbers[i]
+
+        }
+        return small
+    };
+
 };
 
-multiplicationTable(2);
-multiplicationTable(3);
-multiplicationTable(4);
-multiplicationTable(5);
-multiplicationTable(6);
+let result2 = findSmaller(smallNumbers);
+console.log(result2);
 
 // ----------------------------------------------\\
 
-function calculateResult(marks) {
-    let total = 0;
 
-    for (let i = 0; i < marks.length; i++) {
-        total = total + marks[i];
-    }
-
-    let average = total / marks.length;
-
-    let grade;
-
-    if (average >= 90) {
-        grade = "A +";
-    } else if (average >= 80) {
-        grade = "A";
-    } else if (average >= 70) {
-        grade = "B ";
-    } else if (average >= 60) {
-        grade = "C";
-    } else if (average >= 50) {
-        grade = "D";
-    } else {
-        grade = "F : Fail"
-    }
-
-    return {
-        total: total,
-        average: average,
-        grade: grade
-    };
-}
-
-let studentMarks = [85, 40, 95, 55, 60, 70];
-
-let result = calculateResult(studentMarks);
-
-console.log("Total Marks : ", result.total);
-console.log("Average : ", result.average);
-console.log("Grades : ", result.grade);
-
-// ----------------------------------------------\\
