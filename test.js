@@ -360,23 +360,23 @@ for (let i = 0; i < cart.length; i++) {
 
 console.log("Total Quantity : ", totalQuantity);
 
-const students = [
-    { name: "Moiz", marks: 85 },
-    { name: "Ali", marks: 72 },
-    { name: "Zain", marks: 95 },
-    { name: "Bilal", marks: 65 }
-];
+// const students = [
+//     { name: "Moiz", marks: 85 },
+//     { name: "Ali", marks: 72 },
+//     { name: "Zain", marks: 95 },
+//     { name: "Bilal", marks: 65 }
+// ];
 
-let highest = 0;
+// let highest = 0;
 
-for (let i = 0; i < students.length; i++) {
-    if (students[i].marks > highest) {
-        highest = students[i].marks
-    }
+// for (let i = 0; i < students.length; i++) {
+//     if (students[i].marks > highest) {
+//         highest = students[i].marks
+//     }
 
-};
+// };
 
-console.log("Highest Marks : ", highest);
+// console.log("Highest Marks : ", highest);
 
 
 const employees = [
@@ -393,3 +393,45 @@ for (let i = 0; i < employees.length; i++) {
 };
 
 console.log("Total Salary : ", totalSalary);
+
+const students = [
+    { name: "Moiz", marks: 85 },
+    { name: "Ali", marks: 45 },
+    { name: "Zain", marks: 92 },
+    { name: "Bilal", marks: 65 },
+    { name: "Ahmed", marks: 78 }
+];
+
+for (let i = 0; i < students.length; i++) {
+    if (students[i].marks >= 50) {
+        console.log(`${students[i].name} - Pass`);
+
+    } else {
+        console.log(`${students[i].name} - Fail`);
+
+    }
+};
+
+const products = [
+    { name: "Laptop", price: 80000 },
+    { name: "Mobile", price: 45000 },
+    { name: "Mouse", price: 1500 },
+    { name: "Keyboard", price: 2500 },
+    { name: "Monitor", price: 25000 }
+];
+
+for (let i = 0; i < products.length; i++) {
+    if (products[i].price >= 20000) {
+        let discount = products[i].price * 10 / 100;
+        let finalPrice = products[i].price - discount;
+
+        console.log(products[i].name, "10% Discount");
+        console.log("Final Price", finalPrice);
+
+
+    } else {
+
+        console.log(products[i].name, "Original Price:", products[i].price);
+    }
+
+};
