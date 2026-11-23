@@ -242,19 +242,70 @@
 //     if (names[i] !== "Messi") {
 //         console.log(names[i]);
 //     }
+// // };
+
+// let names = ["Hello", "Sulululu", "Meow", "Gupp", "Gupp", "Suiiiiii"]
+
+// function printWithoutName(a, b) {
+//     for (let i = 0; i <= 5; i++) {
+
+//         if (a[i] !== b) {
+
+//             console.log(a[i]);
+
+//         }
+//     }
 // };
 
-let names = ["Hello", "Sulululu", "Meow", "Gupp", "Gupp", "Suiiiiii"]
+// printWithoutName(names, "Suiiiiii")
 
-function printWithoutName(a, b) {
-    for (let i = 0; i <= 5; i++) {
+// const userInfo = [
+//     { name: "Moiz", age: 17 },
+//     { name: "Ali", age: 20 },
+//     { name: "Zain", age: 18 }
+// ];
 
-        if (a[i] !== b) {
+// for (let i = 0; i < userInfo.length; i++) {
+//     console.log(userInfo[i]);
+// };
 
-            console.log(a[i]);
+// const users = [
+//     { name: "Moiz", age: 17 },
+//     { name: "Ali", age: 19 },
+//     { name: "Zain", age: 15 },
+//     { name: "Bilal", age: 22 }
+// ];
+// console.log(users.filter((user) => user.age >= 18));
 
-        }
-    }
+// const students = [
+//     { name: "Moiz", marks: 85 },
+//     { name: "Ali", marks: 70 },
+//     { name: "Zain", marks: 90 },
+//     { name: "Bilal", marks: 60 }
+// ];
+
+// console.log(students.map((student) => student.name));
+
+
+// const students = [
+//     { id: 1, name: "Moiz", marks: 85 },
+//     { id: 2, name: "Ali", marks: 70 },
+//     { id: 3, name: "Zain", marks: 90 },
+//     { id: 4, name: "Bilal", marks: 60 }
+// ];
+
+// console.log(students.find((student) => student.id === 3));
+
+const products = [
+    { name: "Mouse", price: 1500 },
+    { name: "Keyboard", price: 2500 },
+    { name: "Headphones", price: 3000 }
+];
+
+let total = 0;
+
+for (let i = 0; i < products.length; i++) {
+    total = total + products[i].price
 };
 
-printWithoutName(names, "Suiiiiii")
+console.log("Total Sum : ", total);
