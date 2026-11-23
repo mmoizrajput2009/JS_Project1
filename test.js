@@ -296,16 +296,100 @@
 
 // console.log(students.find((student) => student.id === 3));
 
-const products = [
-    { name: "Mouse", price: 1500 },
-    { name: "Keyboard", price: 2500 },
-    { name: "Headphones", price: 3000 }
+// const products = [
+//     { name: "Mouse", price: 1500 },
+//     { name: "Keyboard", price: 2500 },
+//     { name: "Headphones", price: 3000 }
+// ];
+
+// let total = 0;
+
+// for (let i = 0; i < products.length; i++) {
+//     total = total + products[i].price
+// };
+
+// console.log("Total Sum : ", total);
+
+// const students = [
+//     { name: "Moiz", marks: 80 },
+//     { name: "Ali", marks: 70 },
+//     { name: "Zain", marks: 90 },
+//     { name: "Bilal", marks: 60 }
+// ];
+
+// let total = 0;
+
+// for (let i = 0; i < students.length; i++) {
+//     total = total + students[i].marks
+
+// };
+
+// console.log("Total Marks : ", total);
+
+// const students = [
+//     { name: "Moiz", age: 17 },
+//     { name: "Ali", age: 19 },
+//     { name: "Zain", age: 18 },
+//     { name: "Bilal", age: 16 },
+//     { name: "Ahmed", age: 21 }
+// ];
+
+// let count = 0;
+
+// for (let i = 0; i < students.length; i++) {
+//     if (students[i].age >= 18) {
+//         count++;
+//     }
+// };
+
+// console.log("Total Adults : ", count);
+
+const cart = [
+    { name: "Shirt", quantity: 2 },
+    { name: "Shoes", quantity: 1 },
+    { name: "Cap", quantity: 3 },
+    { name: "Watch", quantity: 2 }
 ];
 
-let total = 0;
+let totalQuantity = 0;
 
-for (let i = 0; i < products.length; i++) {
-    total = total + products[i].price
+for (let i = 0; i < cart.length; i++) {
+    totalQuantity = totalQuantity + cart[i].quantity;
+
 };
 
-console.log("Total Sum : ", total);
+console.log("Total Quantity : ", totalQuantity);
+
+const students = [
+    { name: "Moiz", marks: 85 },
+    { name: "Ali", marks: 72 },
+    { name: "Zain", marks: 95 },
+    { name: "Bilal", marks: 65 }
+];
+
+let highest = 0;
+
+for (let i = 0; i < students.length; i++) {
+    if (students[i].marks > highest) {
+        highest = students[i].marks
+    }
+
+};
+
+console.log("Highest Marks : ", highest);
+
+
+const employees = [
+    { name: "Moiz", salary: 50000 },
+    { name: "Ali", salary: 40000 },
+    { name: "Zain", salary: 60000 },
+    { name: "Bilal", salary: 35000 }
+];
+
+let totalSalary = 0;
+
+for (let i = 0; i < employees.length; i++) {
+    totalSalary = totalSalary + employees[i].salary
+};
+
+console.log("Total Salary : ", totalSalary);
