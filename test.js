@@ -344,21 +344,21 @@
 
 // console.log("Total Adults : ", count);
 
-const cart = [
-    { name: "Shirt", quantity: 2 },
-    { name: "Shoes", quantity: 1 },
-    { name: "Cap", quantity: 3 },
-    { name: "Watch", quantity: 2 }
-];
+// const cart = [
+//     { name: "Shirt", quantity: 2 },
+//     { name: "Shoes", quantity: 1 },
+//     { name: "Cap", quantity: 3 },
+//     { name: "Watch", quantity: 2 }
+// ];
 
-let totalQuantity = 0;
+// let totalQuantity = 0;
 
-for (let i = 0; i < cart.length; i++) {
-    totalQuantity = totalQuantity + cart[i].quantity;
+// for (let i = 0; i < cart.length; i++) {
+//     totalQuantity = totalQuantity + cart[i].quantity;
 
-};
+// };
 
-console.log("Total Quantity : ", totalQuantity);
+// console.log("Total Quantity : ", totalQuantity);
 
 // const students = [
 //     { name: "Moiz", marks: 85 },
@@ -379,20 +379,20 @@ console.log("Total Quantity : ", totalQuantity);
 // console.log("Highest Marks : ", highest);
 
 
-const employees = [
-    { name: "Moiz", salary: 50000 },
-    { name: "Ali", salary: 40000 },
-    { name: "Zain", salary: 60000 },
-    { name: "Bilal", salary: 35000 }
-];
+// const employees = [
+//     { name: "Moiz", salary: 50000 },
+//     { name: "Ali", salary: 40000 },
+//     { name: "Zain", salary: 60000 },
+//     { name: "Bilal", salary: 35000 }
+// ];
 
-let totalSalary = 0;
+// let totalSalary = 0;
 
-for (let i = 0; i < employees.length; i++) {
-    totalSalary = totalSalary + employees[i].salary
-};
+// for (let i = 0; i < employees.length; i++) {
+//     totalSalary = totalSalary + employees[i].salary
+// };
 
-console.log("Total Salary : ", totalSalary);
+// console.log("Total Salary : ", totalSalary);
 
 // const students = [
 //     { name: "Moiz", marks: 85 },
@@ -412,50 +412,97 @@ console.log("Total Salary : ", totalSalary);
 //     }
 // };
 
-const products = [
-    { name: "Laptop", price: 80000 },
-    { name: "Mobile", price: 45000 },
-    { name: "Mouse", price: 1500 },
-    { name: "Keyboard", price: 2500 },
-    { name: "Monitor", price: 25000 }
+// const products = [
+//     { name: "Laptop", price: 80000 },
+//     { name: "Mobile", price: 45000 },
+//     { name: "Mouse", price: 1500 },
+//     { name: "Keyboard", price: 2500 },
+//     { name: "Monitor", price: 25000 }
+// ];
+
+// for (let i = 0; i < products.length; i++) {
+//     if (products[i].price >= 20000) {
+//         let discount = products[i].price * 10 / 100;
+//         let finalPrice = products[i].price - discount;
+
+//         console.log(products[i].name, "10% Discount");
+//         console.log("Final Price", finalPrice);
+
+
+//     } else {
+
+//         console.log(products[i].name, "Original Price:", products[i].price);
+//     }
+
+// };
+
+// const students = [
+//     { name: "Moiz", marks: 85 },
+//     { name: "Ali", marks: 45 },
+//     { name: "Zain", marks: 92 },
+//     { name: "Bilal", marks: 65 },
+//     { name: "Ahmed", marks: 78 }
+// ];
+
+// let highest = students[0].marks;
+// let lowest = students[0].marks;
+
+// for (let i = 0; i < students.length; i++) {
+//     if (students[i].marks > highest) {
+//         highest = students[i].marks;
+//     }
+//     if (students[i].marks < lowest) {
+//         lowest = students[i].marks
+//     }
+
+// }
+
+// console.log("Highest Marks : ", highest);
+// console.log("Lowest Marks : ", lowest);
+
+// const users = [
+//     { name: "Moiz", age: 17, city: "Rawalpindi" },
+//     { name: "Ali", age: 22, city: "Lahore" },
+//     { name: "Zain", age: 19, city: "Karachi" },
+//     { name: "Bilal", age: 16, city: "Rawalpindi" },
+//     { name: "Ahmed", age: 25, city: "Islamabad" }
+// ];
+
+// const adults = users.filter((user) => user.age >= 18);
+
+// const names = adults.map((user) => user.name);
+
+// console.log(names);
+
+
+const cart = [
+    { name: "Shirt", price: 2000, quantity: 2 },
+    { name: "Shoes", price: 5000, quantity: 1 },
+    { name: "Cap", price: 1000, quantity: 3 },
+    { name: "Watch", price: 3000, quantity: 2 }
 ];
 
-for (let i = 0; i < products.length; i++) {
-    if (products[i].price >= 20000) {
-        let discount = products[i].price * 10 / 100;
-        let finalPrice = products[i].price - discount;
+let totalBill = 0;
+let highestProduct = 0;
+let expensiveProduct = "";
 
-        console.log(products[i].name, "10% Discount");
-        console.log("Final Price", finalPrice);
+for (let i = 0; i < cart.length; i++) {
+    let productTotal = cart[i].price * cart[i].quantity;
 
+    totalBill = totalBill + productTotal;
 
-    } else {
-
-        console.log(products[i].name, "Original Price:", products[i].price);
+    if (productTotal > highestProduct) {
+        highestProduct = productTotal;
+        expensiveProduct = cart[i].name;
     }
+
+    console.log(
+        cart[i].name + "Total Price : " + productTotal
+    );
 
 };
 
-const students = [
-    { name: "Moiz", marks: 85 },
-    { name: "Ali", marks: 45 },
-    { name: "Zain", marks: 92 },
-    { name: "Bilal", marks: 65 },
-    { name: "Ahmed", marks: 78 }
-];
-
-let highest = students[0].marks;
-let lowest = students[0].marks;
-
-for (let i = 0; i < students.length; i++) {
-    if (students[i].marks > highest) {
-        highest = students[i].marks;
-    }
-    if (students[i].marks < lowest) {
-        lowest = students[i].marks
-    }
-
-}
-
-console.log("Highest Marks : ", highest);
-console.log("Lowest Marks : ", lowest);
+console.log("-------------------------");
+console.log("Total Bill : ", totalBill);
+console.log("Most Expensive Product : ", expensiveProduct);
+console.log("Highest Price : ", highestProduct);
