@@ -394,23 +394,23 @@ for (let i = 0; i < employees.length; i++) {
 
 console.log("Total Salary : ", totalSalary);
 
-const students = [
-    { name: "Moiz", marks: 85 },
-    { name: "Ali", marks: 45 },
-    { name: "Zain", marks: 92 },
-    { name: "Bilal", marks: 65 },
-    { name: "Ahmed", marks: 78 }
-];
+// const students = [
+//     { name: "Moiz", marks: 85 },
+//     { name: "Ali", marks: 45 },
+//     { name: "Zain", marks: 92 },
+//     { name: "Bilal", marks: 65 },
+//     { name: "Ahmed", marks: 78 }
+// ];
 
-for (let i = 0; i < students.length; i++) {
-    if (students[i].marks >= 50) {
-        console.log(`${students[i].name} - Pass`);
+// for (let i = 0; i < students.length; i++) {
+//     if (students[i].marks >= 50) {
+//         console.log(`${students[i].name} - Pass`);
 
-    } else {
-        console.log(`${students[i].name} - Fail`);
+//     } else {
+//         console.log(`${students[i].name} - Fail`);
 
-    }
-};
+//     }
+// };
 
 const products = [
     { name: "Laptop", price: 80000 },
@@ -435,3 +435,27 @@ for (let i = 0; i < products.length; i++) {
     }
 
 };
+
+const students = [
+    { name: "Moiz", marks: 85 },
+    { name: "Ali", marks: 45 },
+    { name: "Zain", marks: 92 },
+    { name: "Bilal", marks: 65 },
+    { name: "Ahmed", marks: 78 }
+];
+
+let highest = students[0].marks;
+let lowest = students[0].marks;
+
+for (let i = 0; i < students.length; i++) {
+    if (students[i].marks > highest) {
+        highest = students[i].marks;
+    }
+    if (students[i].marks < lowest) {
+        lowest = students[i].marks
+    }
+
+}
+
+console.log("Highest Marks : ", highest);
+console.log("Lowest Marks : ", lowest);
