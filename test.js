@@ -544,65 +544,113 @@
 // console.log("Lowest Score : ", lowest);
 // console.log("Valuable Player : ", valuablePlayer);
 
-const transactions = [
-    { type: "deposit", amount: 5000 },
-    { type: "withdraw", amount: 2000 },
-    { type: "deposit", amount: 8000 },
-    { type: "withdraw", amount: 3000 },
-    { type: "deposit", amount: 1500 }
+// const transactions = [
+//     { type: "deposit", amount: 5000 },
+//     { type: "withdraw", amount: 2000 },
+//     { type: "deposit", amount: 8000 },
+//     { type: "withdraw", amount: 3000 },
+//     { type: "deposit", amount: 1500 }
+// ];
+
+// let totalDeposit = 0;
+// let totalWithDraw = 0;
+// let balance = 0;
+
+// for (let i = 0; i < transactions.length; i++) {
+//     if (transactions[i].type === "deposit") {
+//         totalDeposit = totalDeposit + transactions[i].amount;
+//     } else if (transactions[i].type === "withdraw") {
+//         totalWithDraw = totalWithDraw + transactions[i].amount;
+//     }
+//     balance = totalDeposit - totalWithDraw;
+// };
+
+// console.log("Total Deposit : ", totalDeposit);
+// console.log("Total withDraw : ", totalWithDraw);
+// console.log("Final Balance : ", balance);
+
+// const movies = [
+//     { name: "Movie A", rating: 8.5 },
+//     { name: "Movie B", rating: 6.2 },
+//     { name: "Movie C", rating: 9.1 },
+//     { name: "Movie D", rating: 4.8 },
+//     { name: "Movie E", rating: 7.5 }
+// ];
+
+// let count = 0;
+// let highestRating = movies[0].rating;
+// let lowestRating = movies[0].rating;
+
+// let highestMovie = movies[0].name;
+// let lowestMovie = movies[0].name;
+
+// for (let i = 0; i < movies.length; i++) {
+//     if (movies[i].rating >= 7) {
+//         count++;
+//     }
+//     if (movies[i].rating > highestRating) {
+//         highestRating = movies[i].rating;
+//         highestMovie = movies[i].name;
+//     }
+//     if (movies[i].rating < lowestRating) {
+//         lowestRating = movies[i].rating;
+//         lowestMovie = movies[i].name;
+//     }
+
+//     console.log(movies[i].name + " Rating: " + movies[i].rating);
+
+// };
+
+// console.log("Movies with 7 or more ratings:", count);
+// console.log("Highest Rating:", highestRating);
+// console.log("Highest Rated Movie:", highestMovie);
+// console.log("Lowest Rating:", lowestRating);
+// console.log("Lowest Rated Movie:", lowestMovie);
+
+// const inventory = [
+//     { name: "Laptop", stock: 5 },
+//     { name: "Mobile", stock: 12 },
+//     { name: "Mouse", stock: 3 },
+//     { name: "Keyboard", stock: 0 },
+//     { name: "Monitor", stock: 8 },
+//     { name: "Headphones", stock: 2 }
+// ];
+
+// let totalStock = 0;
+// let zeroStock = 0;
+// let lowStock = 0;
+// let highestStock = inventory[0].stock;
+// let highestProduct = inventory[0].name;
+
+// for (let i = 0; i < inventory.length; i++) {
+//     totalStock = totalStock + inventory[i].stock
+//     if (inventory[i].stock === 0) {
+//         zeroStock++;
+//     }
+//     if (inventory[i].stock < 5) {
+//         lowStock++;
+//     }
+//     if (inventory[i].stock > highestStock) {
+//         highestStock = inventory[i].stock;
+//         highestProduct = inventory[i].name;
+//     }
+
+//     console.log(inventory[i].name + " Stock: " + inventory[i].stock);
+
+
+// };
+
+// console.log("Total Stock : ", totalStock);
+// console.log("Zero Stock : ", zeroStock);
+// console.log("Below 5 Stock Product : ", lowStock);
+// console.log("Highest Stock : ", highestStock);
+// console.log("Highest Stock Product : ", highestProduct);
+
+
+const players = [
+    { name: "Moiz", goals: 4, assists: 2 },
+    { name: "Ali", goals: 2, assists: 5 },
+    { name: "Zain", goals: 6, assists: 1 },
+    { name: "Bilal", goals: 1, assists: 3 },
+    { name: "Ahmed", goals: 3, assists: 2 }
 ];
-
-let totalDeposit = 0;
-let totalWithDraw = 0;
-let balance = 0;
-
-for (let i = 0; i < transactions.length; i++) {
-    if (transactions[i].type === "deposit") {
-        totalDeposit = totalDeposit + transactions[i].amount;
-    } else if (transactions[i].type === "withdraw") {
-        totalWithDraw = totalWithDraw + transactions[i].amount;
-    }
-    balance = totalDeposit - totalWithDraw;
-};
-
-console.log("Total Deposit : ", totalDeposit);
-console.log("Total withDraw : ", totalWithDraw);
-console.log("Final Balance : ", balance);
-
-const movies = [
-    { name: "Movie A", rating: 8.5 },
-    { name: "Movie B", rating: 6.2 },
-    { name: "Movie C", rating: 9.1 },
-    { name: "Movie D", rating: 4.8 },
-    { name: "Movie E", rating: 7.5 }
-];
-
-let count = 0;
-let highestRating = movies[0].rating;
-let lowestRating = movies[0].rating;
-
-let highestMovie = movies[0].name;
-let lowestMovie = movies[0].name;
-
-for (let i = 0; i < movies.length; i++) {
-    if (movies[i].rating >= 7) {
-        count++;
-    }
-    if (movies[i].rating > highestRating) {
-        highestRating = movies[i].rating;
-        highestMovie = movies[i].name;
-    }
-    if (movies[i].rating < lowestRating) {
-        lowestRating = movies[i].rating;
-        lowestMovie = movies[i].name;
-    }
-
-    console.log(movies[i].name + " Rating: " + movies[i].rating);
-
-};
-
-console.log("Movies with 7 or more ratings:", count);
-console.log("Highest Rating:", highestRating);
-console.log("Highest Rated Movie:", highestMovie);
-console.log("Lowest Rating:", lowestRating);
-console.log("Lowest Rated Movie:", lowestMovie);
