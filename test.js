@@ -475,34 +475,71 @@
 // console.log(names);
 
 
-const cart = [
-    { name: "Shirt", price: 2000, quantity: 2 },
-    { name: "Shoes", price: 5000, quantity: 1 },
-    { name: "Cap", price: 1000, quantity: 3 },
-    { name: "Watch", price: 3000, quantity: 2 }
+// const cart = [
+//     { name: "Shirt", price: 2000, quantity: 2 },
+//     { name: "Shoes", price: 5000, quantity: 1 },
+//     { name: "Cap", price: 1000, quantity: 3 },
+//     { name: "Watch", price: 3000, quantity: 2 }
+// ];
+
+// let totalBill = 0;
+// let highestProduct = 0;
+// let expensiveProduct = "";
+
+// for (let i = 0; i < cart.length; i++) {
+//     let productTotal = cart[i].price * cart[i].quantity;
+
+//     totalBill = totalBill + productTotal;
+
+//     if (productTotal > highestProduct) {
+//         highestProduct = productTotal;
+//         expensiveProduct = cart[i].name;
+//     }
+
+//     console.log(
+//         cart[i].name + "Total Price : " + productTotal
+//     );
+
+// };
+
+// console.log("-------------------------");
+// console.log("Total Bill : ", totalBill);
+// console.log("Most Expensive Product : ", expensiveProduct);
+// console.log("Highest Price : ", highestProduct);
+
+const players = [
+    { name: "Moiz", score: 120 },
+    { name: "Ali", score: 85 },
+    { name: "Zain", score: 150 },
+    { name: "Bilal", score: 60 },
+    { name: "Ahmed", score: 110 }
 ];
 
-let totalBill = 0;
-let highestProduct = 0;
-let expensiveProduct = "";
+let totalScore = 0;
+let count = 0;
+let highest = players[0].score;
+let lowest = players[0].score;
+let valuablePlayer = players[0].name;
 
-for (let i = 0; i < cart.length; i++) {
-    let productTotal = cart[i].price * cart[i].quantity;
-
-    totalBill = totalBill + productTotal;
-
-    if (productTotal > highestProduct) {
-        highestProduct = productTotal;
-        expensiveProduct = cart[i].name;
+for (let i = 0; i < players.length; i++) {
+    totalScore = totalScore + players[i].score;
+    if (players[i].score >= 100) {
+        count++;
+    }
+    if (players[i].score > highest) {
+        highest = players[i].score;
+        valuablePlayer = players[i].name;
+    }
+    if (players[i].score < lowest) {
+        lowest = players[i].score;
     }
 
-    console.log(
-        cart[i].name + "Total Price : " + productTotal
-    );
+    console.log(players[i].name + "Score: " + players[i].score);
 
 };
 
-console.log("-------------------------");
-console.log("Total Bill : ", totalBill);
-console.log("Most Expensive Product : ", expensiveProduct);
-console.log("Highest Price : ", highestProduct);
+console.log("Total Scores : ", totalScore);
+console.log("Count Score : ", count);
+console.log("Highest Score : ", highest);
+console.log("Lowest Score : ", lowest);
+console.log("Valuable Player : ", valuablePlayer);
