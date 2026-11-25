@@ -543,3 +543,28 @@ console.log("Count Score : ", count);
 console.log("Highest Score : ", highest);
 console.log("Lowest Score : ", lowest);
 console.log("Valuable Player : ", valuablePlayer);
+
+const transactions = [
+    { type: "deposit", amount: 5000 },
+    { type: "withdraw", amount: 2000 },
+    { type: "deposit", amount: 8000 },
+    { type: "withdraw", amount: 3000 },
+    { type: "deposit", amount: 1500 }
+];
+
+let totalDeposit = 0;
+let totalWithDraw = 0;
+let balance = 0;
+
+for (let i = 0; i < transactions.length; i++) {
+    if (transactions[i].type === "deposit") {
+        totalDeposit = totalDeposit + transactions[i].amount;
+    } else if (transactions[i].type === "withdraw") {
+        totalWithDraw = totalWithDraw + transactions[i].amount;
+    }
+    balance = totalDeposit - totalWithDraw;
+};
+
+console.log("Total Deposit : ", totalDeposit);
+console.log("Total withDraw : ", totalWithDraw);
+console.log("Final Balance : ", balance);
