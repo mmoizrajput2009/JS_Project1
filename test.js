@@ -507,42 +507,42 @@
 // console.log("Most Expensive Product : ", expensiveProduct);
 // console.log("Highest Price : ", highestProduct);
 
-const players = [
-    { name: "Moiz", score: 120 },
-    { name: "Ali", score: 85 },
-    { name: "Zain", score: 150 },
-    { name: "Bilal", score: 60 },
-    { name: "Ahmed", score: 110 }
-];
+// const players = [
+//     { name: "Moiz", score: 120 },
+//     { name: "Ali", score: 85 },
+//     { name: "Zain", score: 150 },
+//     { name: "Bilal", score: 60 },
+//     { name: "Ahmed", score: 110 }
+// ];
 
-let totalScore = 0;
-let count = 0;
-let highest = players[0].score;
-let lowest = players[0].score;
-let valuablePlayer = players[0].name;
+// let totalScore = 0;
+// let count = 0;
+// let highest = players[0].score;
+// let lowest = players[0].score;
+// let valuablePlayer = players[0].name;
 
-for (let i = 0; i < players.length; i++) {
-    totalScore = totalScore + players[i].score;
-    if (players[i].score >= 100) {
-        count++;
-    }
-    if (players[i].score > highest) {
-        highest = players[i].score;
-        valuablePlayer = players[i].name;
-    }
-    if (players[i].score < lowest) {
-        lowest = players[i].score;
-    }
+// for (let i = 0; i < players.length; i++) {
+//     totalScore = totalScore + players[i].score;
+//     if (players[i].score >= 100) {
+//         count++;
+//     }
+//     if (players[i].score > highest) {
+//         highest = players[i].score;
+//         valuablePlayer = players[i].name;
+//     }
+//     if (players[i].score < lowest) {
+//         lowest = players[i].score;
+//     }
 
-    console.log(players[i].name + "Score: " + players[i].score);
+//     console.log(players[i].name + "Score: " + players[i].score);
 
-};
+// };
 
-console.log("Total Scores : ", totalScore);
-console.log("Count Score : ", count);
-console.log("Highest Score : ", highest);
-console.log("Lowest Score : ", lowest);
-console.log("Valuable Player : ", valuablePlayer);
+// console.log("Total Scores : ", totalScore);
+// console.log("Count Score : ", count);
+// console.log("Highest Score : ", highest);
+// console.log("Lowest Score : ", lowest);
+// console.log("Valuable Player : ", valuablePlayer);
 
 const transactions = [
     { type: "deposit", amount: 5000 },
@@ -568,3 +568,41 @@ for (let i = 0; i < transactions.length; i++) {
 console.log("Total Deposit : ", totalDeposit);
 console.log("Total withDraw : ", totalWithDraw);
 console.log("Final Balance : ", balance);
+
+const movies = [
+    { name: "Movie A", rating: 8.5 },
+    { name: "Movie B", rating: 6.2 },
+    { name: "Movie C", rating: 9.1 },
+    { name: "Movie D", rating: 4.8 },
+    { name: "Movie E", rating: 7.5 }
+];
+
+let count = 0;
+let highestRating = movies[0].rating;
+let lowestRating = movies[0].rating;
+
+let highestMovie = movies[0].name;
+let lowestMovie = movies[0].name;
+
+for (let i = 0; i < movies.length; i++) {
+    if (movies[i].rating >= 7) {
+        count++;
+    }
+    if (movies[i].rating > highestRating) {
+        highestRating = movies[i].rating;
+        highestMovie = movies[i].name;
+    }
+    if (movies[i].rating < lowestRating) {
+        lowestRating = movies[i].rating;
+        lowestMovie = movies[i].name;
+    }
+
+    console.log(movies[i].name + " Rating: " + movies[i].rating);
+
+};
+
+console.log("Movies with 7 or more ratings:", count);
+console.log("Highest Rating:", highestRating);
+console.log("Highest Rated Movie:", highestMovie);
+console.log("Lowest Rating:", lowestRating);
+console.log("Lowest Rated Movie:", lowestMovie);
